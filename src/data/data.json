@@ -1,0 +1,1053 @@
+{
+  "1": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-46695796/original/38bc8081-9415-453a-b8bf-9f4aeb146819.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-46695796/original/9bd67185-dc83-4473-a191-9486c62aec66.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-46695796/original/2b2770a8-75e8-4c33-8d0a-8189168ae744.jpeg?im_w=1200"
+    ],
+    "description": "Minicasa en Lac-Beauport, Canadá",
+    "guestsFavorite": true,
+    "score": 4.98,
+    "numReviews": 250,
+    "beds": 3,
+    "rooms": 3,
+    "peopleCapacity": 5,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Aire acondicionado", "value": true },
+      { "name": "Vista al valle", "value": true },
+      { "name": "Zona de trabajo", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Autonomous checking", "value": true },
+      { "name": "Pets", "value": true },
+      { "name": "Reserva inmediata", "value": true }
+    ],
+    "location": {
+      "continent": "America",
+      "country": "Canada",
+      "city": "Lac-Beauport",
+      "state": "Quebec",
+      "neighborhood": "Beauport",
+      "lat": 46.9544,
+      "long": -71.2758,
+      "description": "Bienvenido a la 'MICA', microcasa de alta gama encaramada en la cima de la montaña. Sumérjase en una experiencia inmersiva en la naturaleza a solo 30 minutos del Viejo Quebec."
+    },
+    "availability": [
+      { "date": ["2024-01-25", "2024-02-14"], "price": 230 },
+      { "date": ["2024-01-29", "2024-02-29"], "price": 310 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 330 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 370 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 350 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 350 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 400 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 365 }
+    ],
+    "kind": "Casas rurales"
+  },
+  "2": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-46136014/original/90651914-eab8-4f54-85d2-d95e73f34dd2.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-46136014/original/a20ec935-8a23-4a86-a846-38c6a8f313a9.jpeg?im_w=1440",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-52339070/original/5c2f1d16-6694-463e-bb5b-6966083e5da6.jpeg?im_w=960",
+      "https://a0.muscache.com/im/pictures/66d82607-ae84-48a4-a6d0-8c5a2106c2fa.jpg?im_w=1440"
+    ],
+    "description": "Hermosa cabaña en el campo",
+    "guestsFavorite": true,
+    "score": 4.7,
+    "numReviews": 174,
+    "beds": 7,
+    "rooms": 5,
+    "peopleCapacity": 10,
+    "baths": 3,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Hotel",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Parqueadero", "value": true },
+      { "name": "Acceso a lago", "value": true },
+      { "name": "Cocina", "value": true }
+    ],
+    "bookingOptions": [{ "name": "Autonomous checking", "value": true }],
+    "location": {
+      "continent": "America",
+      "country": "Colombia",
+      "city": "Bogota",
+      "state": "Chia",
+      "neighborhood": "Refugio",
+      "lat": 4.85876,
+      "long": -74.05866,
+      "description": "Vive una experiencia en un lugar mágico en medio de la naturaleza, déjate llevar por su amanecer, sus infinitos verdes y los cálidos colores de su atardecer, acompañado de confort y aventura"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 20 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 20 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 22 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 22 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 25 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 27 }
+    ],
+    "kind": "Esqui"
+  },
+  "3": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/59911802-7ff7-47d9-936c-7742b5db61b4.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/33896014/65be93d7_original.jpg?im_w=1200"
+    ],
+    "description": "Choza en Balian Beach, Indonesia",
+    "guestsFavorite": true,
+    "score": 4.87,
+    "numReviews": 354,
+    "beds": 4,
+    "rooms": 6,
+    "peopleCapacity": 7,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Gimnasio", "value": true },
+      { "name": "Parrilla", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Asia",
+      "country": "Indonesia",
+      "city": "Bali",
+      "state": "Bali",
+      "neighborhood": "Outside",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "La casa del árbol de Bali está a solo 3 minutos a pie de la playa. Desde el porche puedes ver el amanecer por la mañana y disfrutar de las vistas de nuestro hermoso jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 60 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 42 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 59 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 70 }
+    ],
+    "kind": "Cabaña"
+  },
+  "4": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-483505/original/78e690c0-f88e-4192-909f-3ee48db24538.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/57537113/eb73f6fe_original.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-483505/original/50f232d1-bf9d-4784-80a0-118cb95b02cc.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-483505/original/e3e8fccc-ebb3-4a9c-ab09-c3de4fb9e7c8.jpeg?im_w=1200"
+    ],
+    "description": "Habitación en Brooklyn, Nueva York, Estados Unidos",
+    "guestsFavorite": false,
+    "score": 5,
+    "numReviews": 14,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 1,
+    "baths": 0,
+    "bathKind": "public",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Casa de huespedes",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Zona de trabajo", "value": true },
+      { "name": "Cocina", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Autonomous checking", "value": true }
+    ],
+    "location": {
+      "continent": "America",
+      "country": "Estados Unidos",
+      "city": "New York",
+      "state": "Brookliyn",
+      "neighborhood": "Williamsburg",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "Este lugar especial está cerca de todo, por lo que es fácil planificar tu visita. Nos preocupamos por cada pequeño detalle para que disfrutes de una estancia maravillosa, desde la pared de pizarra que enumera los lugares favoritos de mi vecindario, hasta bebidas y aperitivos a la llegada"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 250 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 260 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 270 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 300 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 320 }
+    ],
+    "kind": "Ciudades famosas"
+  },
+  "5": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/5e622354-f982-4c99-a443-65da2eac249d.jpg?im_w=960",
+      "https://a0.muscache.com/im/pictures/cdf72d43-21f3-4097-8926-a3d406bb73b6.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-578716806886078207/original/0bbc344a-0c24-4886-bd49-98c53a979ffb.jpeg?im_w=1200"
+    ],
+    "description": "Habitación en Bombay, India",
+    "guestsFavorite": true,
+    "score": 4.93,
+    "numReviews": 654,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 2,
+    "baths": 1,
+    "bathKind": "public",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Casa de huespedes",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Cocina", "value": true },
+      { "name": "Wifi", "value": true },
+      { "name": "Secadora", "value": true }
+    ],
+    "bookingOptions": [{ "name": "Reserva inmediata", "value": true }],
+    "location": {
+      "continent": "Asia",
+      "country": "India",
+      "city": "Bombay",
+      "state": "Maharastra",
+      "neighborhood": "Mumbai",
+      "lat": 19.0712,
+      "long": 72.8762,
+      "description": "Un amplio dormitorio privado en un apartamento en el piso 14 con vista a la ciudad."
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 190 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 200 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 205 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 200 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 220 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 245 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 300 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 300 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 350 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 380 }
+    ],
+    "kind": "Novedad"
+  },
+  "6": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-9955014/original/ee3441a2-0b6f-4e69-898e-972cca5d9906.jpg?im_w=960",
+      "https://a0.muscache.com/im/pictures/31fb1db6-ad71-4e4c-84e1-485eeffe4cb9.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-9955014/original/544e4627-b7b7-450e-93c3-3e500206e7f6.jpeg?im_w=720"
+    ],
+    "description": "Habitación en Florencia, Italia",
+    "guestsFavorite": true,
+    "score": 4.83,
+    "numReviews": 154,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 1,
+    "baths": 1,
+    "bathKind": "private",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Camaras de seguridad", "value": true },
+      { "name": "Asensor", "value": true },
+      { "name": "Wifi", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Autonomous checking", "value": true }
+    ],
+    "location": {
+      "continent": "Europa",
+      "country": "Italia",
+      "city": "Florencia",
+      "state": "Toscana",
+      "neighborhood": "Duomo",
+      "lat": 43.7687,
+      "long": 11.2569,
+      "description": "Habitación individual en un elegante ático con terraza y vistas impresionantes del centro histórico. A pocos pasos de la Piazza Beccaria, a 15 minutos caminando del Duomo."
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 140 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 141 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 169 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 170 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 180 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 200 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 205 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 260 }
+    ],
+    "kind": "Esqui"
+  },
+  "7": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/d5f1e557-2680-4371-a1c5-fe8b6e7129df.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/11c7bdc0-a27a-445d-b5d6-4f8d388e630b.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/82cb7066-de81-41ce-96f3-32903e4fd897.jpg?im_w=720"
+    ],
+    "description": "Vivienda rentada entero en París, Francia",
+    "guestsFavorite": false,
+    "score": 4.47,
+    "numReviews": 50,
+    "beds": 3,
+    "rooms": 4,
+    "peopleCapacity": 6,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "TV", "value": true },
+      { "name": "Camaras de seguridad", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Europa",
+      "country": "Francia",
+      "city": "Paris",
+      "state": "Paris",
+      "neighborhood": "Mommatre",
+      "lat": 48.8032,
+      "long": 2.3511,
+      "description": "Magnífico apartamento de 65 m2  5ª planta con ascensor.con 2 dormitorios, ropa de cama de muy alta calidad de 160*200,amplio espacio de almacenamiento una sala de estar Con comedor y chimenea,dos sofás para dos camas de 1 persona"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 380 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 390 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 392 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 399 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 370 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 410 }
+    ],
+    "kind": "Casa del arbol"
+  },
+  "8": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-13948579/original/e50ec48a-8188-405f-83bc-f0a3245a11ea.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-13948579/original/a511b69f-5eb7-4436-a790-887a69c844b2.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/34d28f1c-21de-41be-9317-deb1093392b0.jpg?im_w=1200"
+    ],
+    "description": "Habitación en Nishikyō-ku, Kyōto-shi, Japón",
+    "guestsFavorite": true,
+    "score": 4.98,
+    "numReviews": 140,
+    "beds": 7,
+    "rooms": 3,
+    "peopleCapacity": 4,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Hotel",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Refrigerador", "value": true },
+      { "name": "Desayuno", "value": true },
+      { "name": "Aire acondicionado", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Autonomous checking", "value": true }
+    ],
+    "location": {
+      "continent": "Asia",
+      "country": "Japon",
+      "city": "Kioto",
+      "state": "Niokimon",
+      "neighborhood": "Kiototowm",
+      "lat": 35.0117,
+      "long": 135.7678,
+      "description": "Hana House es una casa tradicional construida hace unos 100 años >> limitada a un grupo por día (1-4 personas)."
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 85 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 95 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 82 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 89 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 }
+    ],
+    "kind": "Vistas increibles"
+  },
+  "9": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/2564134d-4f7e-4462-b839-fd771066c179.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/cc3d3e9a-d28d-4dfa-99ac-a49710bc121a.jpg?im_w=960",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-784059051760621925/original/6052266e-acc1-4021-9ce0-8b560240bb62.jpeg?im_w=1200"
+    ],
+    "description": "Habitación en Fatih, Estambul Turquía",
+    "guestsFavorite": false,
+    "score": 4.1,
+    "numReviews": 39,
+    "beds": 2,
+    "rooms": 3,
+    "peopleCapacity": 4,
+    "baths": 1,
+    "bathKind": "public",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Hotel",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Zona de trabajo", "value": true },
+      { "name": "Lavadora", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Autonomous checking", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Asia",
+      "country": "Turquia",
+      "city": "Istambul",
+      "state": "Estambul",
+      "neighborhood": "Ramadsha",
+      "lat": 41.0122,
+      "long": 28.976,
+      "description": "El lugar está bastante limpio y agradable."
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 30 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 38 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 42 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 39 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 27 }
+    ],
+    "kind": "Islas"
+  },
+  "10": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-42278778/original/6acb2562-3cf0-426f-9e5e-8992b18173aa.jpg?im_w=960",
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-42278778/original/2afd9de2-a775-495c-a439-3b54cea8b51f.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-42278778/original/6be2eb0c-87c5-4b4e-8e77-342ba035c114.jpg?im_w=720"
+    ],
+    "description": "¡Gran habitación privada, gran precio, el poblado!!!",
+    "guestsFavorite": true,
+    "score": 4.97,
+    "numReviews": 1354,
+    "beds": 4,
+    "rooms": 2,
+    "peopleCapacity": 5,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa de huespedes",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Gimnasio", "value": true },
+      { "name": "Secadora de pelo", "value": true },
+      { "name": "Cama King", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true },
+      { "name": "Autonomous checking", "value": true }
+    ],
+    "location": {
+      "continent": "America",
+      "country": "Colombia",
+      "city": "Medellin",
+      "state": "Medellin",
+      "neighborhood": "Poblado",
+      "lat": 6.217,
+      "long": -75.567,
+      "description": "Tengo disponible para ti una habitación privada con baño dentro y para uso exclusivo; "
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 20 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 25 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 22 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 29 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 30 }
+    ],
+    "kind": "Populares"
+  },
+  "11": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/f5c2a240-ba06-4d05-8972-faf4ea3cc39f.jpg?im_w=960",
+      "https://a0.muscache.com/im/pictures/1a5cbc58-4b8d-4883-aa5a-6cba16bf4c5d.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/4910b544-5eb5-47f3-a131-06b757e508bc.jpg?im_w=1200"
+    ],
+    "description": "Apartaestudio en Madrid, España",
+    "guestsFavorite": false,
+    "score": 4.67,
+    "numReviews": 554,
+    "beds": 2,
+    "rooms": 2,
+    "peopleCapacity": 3,
+    "baths": 1,
+    "bathKind": "public",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa de huespedes",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "TV", "value": true },
+      { "name": "Zona de trabajo", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Europa",
+      "country": "España",
+      "city": "Madrid",
+      "state": "Cataluña",
+      "neighborhood": "Vasco",
+      "lat": 40.4167,
+      "long": -3.70325,
+      "description": "Disisfrutar de las vistas de nuestro hermoso jardín en Cataluña, come buenas tapas"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 90 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 82 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 79 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 100 }
+    ],
+    "kind": "Autosuficiente"
+  },
+  "12": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/0b50d629-6918-4602-ab36-ca3a398162b1.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/2402f9f9-00ff-4c63-a6b8-12eb8c82b704.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-723729709819063867/original/f9072de1-b720-409d-897d-e071e068fa1b.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-723729709819063867/original/bed61597-b2ad-4947-9200-e99327b5a402.jpeg?im_w=1200"
+    ],
+    "description": "Habitación en Tromsø, Noruega",
+    "guestsFavorite": true,
+    "score": 4.79,
+    "numReviews": 854,
+    "beds": 2,
+    "rooms": 2,
+    "peopleCapacity": 3,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Hotel",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Wifi", "value": true },
+      { "name": "Zona de trabajo", "value": true },
+      { "name": "Cama King", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Autonomous checking", "value": true },
+      { "name": "Pets", "value": true },
+      { "name": "Reserva inmediata", "value": true }
+    ],
+    "location": {
+      "continent": "Europa",
+      "country": "Noruega",
+      "city": "Thomson",
+      "state": "Gruhuy",
+      "neighborhood": "Galouy",
+      "lat": 59.9138,
+      "long": 10.7387,
+      "description": "Este lugar tiene naturaleza al lado.  Montañas, mar, silencio, paz en invierno y verano.  A solo 40 km de la ciudad"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 60 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 60 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 62 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 69 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 70 }
+    ],
+    "kind": "Ciudades famosas"
+  },
+  "13": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/e2ba6339-d2da-4385-8875-5a9a4e993e74.jpg?im_w=960",
+      "https://a0.muscache.com/im/pictures/44382696-ffc2-4bef-8c3b-4a8e8e91f514.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/71c4e086-64b7-498b-8907-66a74a3b0f45.jpg?im_w=720"
+    ],
+    "description": "Apartamento con servicios incluidos entero en Cancún, México",
+    "guestsFavorite": true,
+    "score": 4.87,
+    "numReviews": 154,
+    "beds": 4,
+    "rooms": 7,
+    "peopleCapacity": 7,
+    "baths": 2,
+    "bathKind": "public",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Gimnasio", "value": true },
+      { "name": "Jacuzzi", "value": true },
+      { "name": "Cama King", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Autonomous checking", "value": true }
+    ],
+    "location": {
+      "continent": "America",
+      "country": "Mexico",
+      "city": "Cancun",
+      "state": "Tulum",
+      "neighborhood": "Quintana Roo",
+      "lat": 21.1524,
+      "long": -86.8663,
+      "description": "Departamento EN PRIMERA LINEA DE PLAYA y con VISTA espectacular AL MAR, dos camas matrimoniales"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 95 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 92 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 89 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 70 }
+    ],
+    "kind": "Mansiones"
+  },
+  "14": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/61b557f4-5452-4316-8c43-7487651206a8.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/bf17baf0-3b5f-4a8d-9d3f-190a6bbed090.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/52689912-0091-4b8e-a2f5-1ef93b36f6bf.jpg?im_w=720"
+    ],
+    "description": "¡¡Sunset Royal Resort Todo Incluido!!",
+    "guestsFavorite": false,
+    "score": 4.57,
+    "numReviews": 84,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 2,
+    "baths": 1,
+    "bathKind": "private",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Hotel",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Gimnasio", "value": true },
+      { "name": "Zona de trabajo", "value": true }
+    ],
+    "bookingOptions": [{ "name": "Reserva inmediata", "value": true }],
+    "location": {
+      "continent": "America",
+      "country": "Mexico",
+      "city": "Cancun",
+      "state": "Quinta Roo",
+      "neighborhood": "Tortugas",
+      "lat": 21.1524,
+      "long": -86.8663,
+      "description": "Vive una magica experiencia en la playa, podras ver el amanecer por la mañana y disfrutar de las vistas de nuestro hermoso jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 60 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 42 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 59 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 60 }
+    ],
+    "kind": "Tropical"
+  },
+  "15": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-800896303612333631/original/c5ffc50b-f2f1-4ba0-85fd-bcc02bda4b21.jpeg?im_w=960",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-800896303612333631/original/4604640c-942a-4a4b-b1e8-9780099d2b11.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-800896303612333631/original/45b2ec7e-c3ec-48eb-99e3-34ff140f0ac5.jpeg?im_w=720"
+    ],
+    "description": "Australia, apartamento al frente de Downtown",
+    "guestsFavorite": true,
+    "score": 4.27,
+    "numReviews": 354,
+    "beds": 4,
+    "rooms": 3,
+    "peopleCapacity": 7,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Piscina", "value": true },
+      { "name": "TV", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Oceania",
+      "country": "Australia",
+      "city": "Camberra",
+      "state": "Camberra",
+      "neighborhood": "Cawtren",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "La casa de nuestro hermoso tio es la mejor con jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 30 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 30 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 42 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 39 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 30 }
+    ],
+    "kind": "Populares"
+  },
+  "16": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/43027607-3f44-426c-80d5-b0ce3aa8a66a.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/227594d9-ef83-4934-981c-1207498bc3fd.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/208cc113-54c5-4413-846e-c03d8df1f4b5.jpg?im_w=720"
+    ],
+    "description": "Habitación en bed and breakfast en Airlie Beach, Australia",
+    "guestsFavorite": false,
+    "score": 4.67,
+    "numReviews": 304,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 2,
+    "baths": 1,
+    "bathKind": "private",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Casa de huespedes",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "TV", "value": true },
+      { "name": "Zona de trabajo", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Autonomous checking", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Oceania",
+      "country": "Australia",
+      "city": "Arlie Beach",
+      "state": "Aust",
+      "neighborhood": "Tyju",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "Disfruta las fiesta y diversion mientras trabajas en Australia"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 405 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 407 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 420 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 409 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 }
+    ],
+    "kind": "Frente al lago"
+  },
+  "17": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-24658747/original/a8bcdeed-5a31-4c0f-8dd4-6874226716f2.png?im_w=720",
+      "https://a0.muscache.com/im/pictures/3b68d839-61c4-4098-87fe-37b0ddadd99c.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-24658747/original/4a64a917-907d-4e9a-a8a8-3109f328f2d4.jpg?im_w=720"
+    ],
+    "description": "Habitación en hotel boutique en Ubud, Indonesia",
+    "guestsFavorite": true,
+    "score": 4.97,
+    "numReviews": 754,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 1,
+    "baths": 2,
+    "bathKind": "public",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Hotel",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Piscina", "value": true },
+      { "name": "Parrilla", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Asia",
+      "country": "Indonesia",
+      "city": "Bali",
+      "state": "Bali",
+      "neighborhood": "Outside",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "La casa del árbol de Bali está a solo 3 minutos a pie de la playa. Desde el porche puedes ver el amanecer por la mañana y disfrutar de las vistas de nuestro hermoso jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 70 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 72 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 89 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 70 }
+    ],
+    "kind": "Bed and breakfast"
+  },
+  "18": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/79e6d6ac-b277-4839-aa71-f378bd48f1f1.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/dfcdc052-a50e-444e-82a2-c22207677d0c.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/359e4687-e0fb-43fa-ab25-c8076cc47ef1.jpg?im_w=720"
+    ],
+    "description": "Casa moderna en Suiza",
+    "guestsFavorite": false,
+    "score": 4.35,
+    "numReviews": 394,
+    "beds": 5,
+    "rooms": 3,
+    "peopleCapacity": 6,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Plancha", "value": true },
+      { "name": "Zona de trabajo", "value": true }
+    ],
+    "bookingOptions": [{ "name": "Reserva inmediata", "value": true }],
+    "location": {
+      "continent": "Europa",
+      "country": "Suiza",
+      "city": "Catrella",
+      "state": "Suiza",
+      "neighborhood": "Crewn",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "El amanecer por la mañana y disfrutar de las vista a las montañas"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 100 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 130 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 122 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 119 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 110 }
+    ],
+    "kind": "Vistas increibles"
+  },
+  "19": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-756897782226827631/original/d613143e-6641-443d-981e-f3e928538abb.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-756897782226827631/original/9b5f2100-51de-43df-bbe6-17882a9351bf.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-756897782226827631/original/30bf5763-a9b3-4316-8162-3a02d212d6ce.jpeg?im_w=720"
+    ],
+    "description": "Apartamento con servicios incluidos entero en Melbourne, Australia",
+    "guestsFavorite": true,
+    "score": 4.87,
+    "numReviews": 354,
+    "beds": 4,
+    "rooms": 3,
+    "peopleCapacity": 7,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Piscina", "value": true },
+      { "name": "Desayuno", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Oceania",
+      "country": "Australia",
+      "city": "Melbourne",
+      "state": "Melbourne",
+      "neighborhood": "Outside",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "La casa del árbol de Bali está a solo 3 minutos a pie de la playa. Desde el porche puedes ver el amanecer por la mañana y disfrutar de las vistas de nuestro hermoso jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 120 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 180 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 120 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 159 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 170 }
+    ],
+    "kind": "Cabaña"
+  },
+  "20": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49634228/original/64a1918d-2bc5-493f-acec-c94dbfb7ce5f.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49634228/original/d2bad745-1cf9-459c-acb9-9a3ad92c085f.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-49634228/original/47b4003f-a37a-47ac-8c1e-8b9c46bd67bb.jpeg?im_w=720"
+    ],
+    "description": "Habitación en apartahotel en San Francisco, California, Estados Unidos",
+    "guestsFavorite": true,
+    "score": 4.88,
+    "numReviews": 74,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 2,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Hotel",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Zona de trabajo", "value": true },
+      { "name": "Camaras de seguridad", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "America",
+      "country": "Estados Unidos",
+      "city": "San Francisco",
+      "state": "California",
+      "neighborhood": "Palo Alto",
+      "lat": 37.7272,
+      "long": -123.032,
+      "description": "Esta habitación con patio tiene DOS camas extralargas de tamaño completo (longitud de una cama queen pero ancho de una completa)."
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 260 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 280 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 242 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 299 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 270 }
+    ],
+    "kind": "Casa del arbol"
+  },
+  "21": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/59911802-7ff7-47d9-936c-7742b5db61b4.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/33896014/65be93d7_original.jpg?im_w=1200"
+    ],
+    "description": "Choza en Balian Beach, Indonesia",
+    "guestsFavorite": true,
+    "score": 4.87,
+    "numReviews": 354,
+    "beds": 4,
+    "rooms": 3,
+    "peopleCapacity": 7,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Alojamiento entero",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Piscina", "value": true },
+      { "name": "Parrilla", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Asia",
+      "country": "Indonesia",
+      "city": "Bali",
+      "state": "Bali",
+      "neighborhood": "Outside",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "La casa del árbol de Bali está a solo 3 minutos a pie de la playa. Desde el porche puedes ver el amanecer por la mañana y disfrutar de las vistas de nuestro hermoso jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 56 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 80 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 49 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 59 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 48 }
+    ],
+    "kind": "Cabaña"
+  },
+  "22": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/59911802-7ff7-47d9-936c-7742b5db61b4.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/33896014/65be93d7_original.jpg?im_w=1200"
+    ],
+    "description": "Habitacion en Monaco",
+    "guestsFavorite": true,
+    "score": 4.92,
+    "numReviews": 354,
+    "beds": 1,
+    "rooms": 1,
+    "peopleCapacity": 2,
+    "baths": 1,
+    "bathKind": "private",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Wifi", "value": true },
+      { "name": "Secadora", "value": true },
+      { "name": "Desayuno", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Asia",
+      "country": "Indonesia",
+      "city": "Bali",
+      "state": "Bali",
+      "neighborhood": "Outside",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "La casa del árbol de Bali está a solo 3 minutos a pie de la playa. Desde el porche puedes ver el amanecer por la mañana y disfrutar de las vistas de nuestro hermoso jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 350 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 280 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 248 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 253 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 270 }
+    ],
+    "kind": "Frente al lago"
+  },
+  "23": {
+    "pics": [
+      "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/59911802-7ff7-47d9-936c-7742b5db61b4.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/33896014/65be93d7_original.jpg?im_w=1200"
+    ],
+    "description": "Habitacion en Londres",
+    "guestsFavorite": true,
+    "score": 4.97,
+    "numReviews": 354,
+    "beds": 2,
+    "rooms": 1,
+    "peopleCapacity": 7,
+    "baths": 2,
+    "bathKind": "private",
+    "tipoAlojamiento": "Habitacion",
+    "tipoPropiedad": "Casa",
+    "services": [
+      { "name": "Lavadora", "value": true },
+      { "name": "Plancha", "value": true },
+      { "name": "Cuna", "value": true },
+      { "name": "Jacuzzi", "value": true }
+    ],
+    "bookingOptions": [
+      { "name": "Reserva inmediata", "value": true },
+      { "name": "Pets", "value": true }
+    ],
+    "location": {
+      "continent": "Asia",
+      "country": "Indonesia",
+      "city": "Bali",
+      "state": "Bali",
+      "neighborhood": "Outside",
+      "lat": -8.409518,
+      "long": 115.188919,
+      "description": "La casa del árbol de Bali está a solo 3 minutos a pie de la playa. Desde el porche puedes ver el amanecer por la mañana y disfrutar de las vistas de nuestro hermoso jardín"
+    },
+    "availability": [
+      { "date": ["2024-03-17", "2024-04-01"], "price": 460 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 380 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 452 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 356 },
+      { "date": ["2024-03-17", "2024-04-01"], "price": 255 }
+    ],
+    "kind": "Casas historicas"
+  }
+}
