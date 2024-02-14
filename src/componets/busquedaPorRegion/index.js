@@ -1,1 +1,1 @@
-export * from "./busquedaPorRegion.js";
+export * from "./busquedaPorRegion.jsx";

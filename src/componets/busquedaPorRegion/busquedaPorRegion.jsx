@@ -1,8 +1,8 @@
 import styles from "./index.module.css";
 import { Title } from "../title";
-import { RegionSearch } from "../regionSearch";
+import { RegionSearch } from "../regionsCard/regionsCard";
 
-function Donde({ data }) {
+function Donde() {
   return (
     <div className={styles.dondeParam}>
       <div className={styles.busquedaRegion}>
