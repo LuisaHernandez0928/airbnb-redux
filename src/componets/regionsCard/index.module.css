@@ -1,0 +1,34 @@
+.cardRegion {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.mapaContainer {
+  width: 100%;
+  height: 95%;
+  border-radius: 16px;
+  border: 1px solid #dddddd;
+  margin-bottom: 3px;
+}
+
+.mapaContainer:hover {
+  border: 1px solid black;
+}
+
+.mapaRegion {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.textCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 5%;
+}
