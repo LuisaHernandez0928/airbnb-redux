@@ -1,10 +1,10 @@
 import "./App.css";
-import { Donde } from "./componets/busquedaPorRegion";
+import { HomeSearchBar } from "./layouts/homeSearchBar";
 
 function App() {
   return (
     <div className="App">
-      <Donde />
+      <HomeSearchBar />
     </div>
   );
 }
