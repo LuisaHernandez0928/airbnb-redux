@@ -1,8 +1,7 @@
 import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { ModalSearchBar } from "../modalSearchBar";
 import { Title } from "../title";
-import styles from "./index.module.css";
-import TuneIcon from "@mui/icons-material/Tune";
 import { RadioButton } from "../radioButton/radioButton";
 import { MemoizedRangePrices } from "../rangePricesFilter/rangePricesFilter";
 import { HabitacionesCamas } from "../habitacionesCamas";
@@ -15,9 +14,12 @@ import { Languages } from "../languages/languages";
 import { Footer } from "../footer/footer";
 import { Header } from "../filterHeader/header";
 
+import styles from "./index.module.css";
+import TuneIcon from "@mui/icons-material/Tune";
+
 function Filters() {
   const [showFilters, setShowFilters] = useState(false);
-  console.log(showFilters);
+
   const [userFilters, setUserFilters] = useState({
     tipoAlojamiento: "Cualquier tipo",
     priceMin: 20,
@@ -30,7 +32,9 @@ function Filters() {
     services: [],
     bookingOptions: [],
   });
-  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  const data = useSelector((state) => state.airbnbs.value);
+  console.log(data);
   const handleAlojamientoChanges = (value) => {
     setUserFilters((prevFilters) => ({
       ...prevFilters,
@@ -86,7 +90,6 @@ function Filters() {
 
   const openFilters = () => {
     setShowFilters(!showFilters);
-    console.log(showFilters);
   };
 
   const handleClickOutside = () => {
@@ -318,10 +321,8 @@ function Filters() {
       return false;
     }
   };
-
-  /*const dataArray = Object.values(data);
   console.log(
-    dataArray.filter(
+    data.filter(
       (airbnb) =>
         priceRangeFilter(
           airbnb,
@@ -338,7 +339,7 @@ function Filters() {
         servicesFilter(airbnb, userFilters, getAirbnbServices) &&
         bookingOptionsFilter(airbnb, userFilters, getBookingOptions)
     )
-  ); */
+  );
   /*<button onClick={openFilters}>
         <TuneIcon />
         <Title text={"Filtros"} />
@@ -362,6 +363,18 @@ function Filters() {
         <TuneIcon />
         <Title text={"Filtros"} />
       </button>
+      {showFilters && (
+        <div
+          onClick={() => handleClickOutside()}
+          className={styles.aboveScreen}
+        >
+          <ModalSearchBar
+            modalContent={filters}
+            showParameterInfo={showInfo}
+            destinationSearch={"filter"}
+          />
+        </div>
+      )}
     </div>
   );
 }

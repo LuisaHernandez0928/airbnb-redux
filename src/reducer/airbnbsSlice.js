@@ -15,7 +15,7 @@ const initialState = {
 
 console.log(arrayData);
 export const airbnbsSlice = createSlice({
-  name: airbnbsReducerPath,
+  name: "airbnbs",
   initialState,
   reducers: {
     test: (state) => {
