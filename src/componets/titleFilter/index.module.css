@@ -1,0 +1,10 @@
+.titleStyle{
+  width: 100%;
+  font-size: 1.375rem;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  line-height: 1.625rem;
+  letter-spacing: normal;
+  color: #222 ;
+  padding-bottom: 24px;
+}

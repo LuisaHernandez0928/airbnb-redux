@@ -1,13 +1,50 @@
+import { useState } from "react";
 import { SearchParameter } from "../../componets/searchParameter";
+import { ModalSearchBar } from "../../componets/modalSearchBar";
+import { Donde } from "../../componets/busquedaPorRegion";
+import { DatePicker } from "../../componets/datePicker";
+import { PeopleCounter } from "../../componets/peopleCounter";
+import { TitleFilter } from "../../componets/titleFilter";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "./index.module.css";
-import { Donde } from "../../componets/busquedaPorRegion";
-import { useState } from "react";
+
 function HomeSearchBar() {
-  const [filterSelected, setFilterSelected] = useState(false);
+  const [filterSelected, setFilterSelected] = useState(0);
 
   const notifyFilterSelected = (identifier) => {
     setFilterSelected(identifier);
+  };
+
+  const filterBoxContent = (identifier) => {
+    console.log(identifier);
+    switch (identifier) {
+      case 1:
+        return <Donde />;
+      case 2:
+        return <DatePicker />;
+      case 3:
+        return <DatePicker />;
+      case 4:
+        return (
+          <div className={styles.peopleContainerOpts}>
+            <TitleFilter text={"Quienes pueden asistir?"} />
+            <PeopleCounter
+              peopleKind={"Adultos"}
+              description={"Edad 13 anos o mas"}
+            />
+            <PeopleCounter
+              peopleKind={"Bebes"}
+              description={"Menos de 2 anos"}
+            />
+            <PeopleCounter
+              peopleKind={"Mascotas"}
+              description={"Mascotas de seguridad"}
+            />
+          </div>
+        );
+      default:
+        return <></>;
+    }
   };
 
   return (
@@ -34,7 +71,10 @@ function HomeSearchBar() {
           <SearchIcon></SearchIcon>
         </div>
       </button>
-      {filterSelected === true ? <Donde /> : <></>}
+      <ModalSearchBar
+        modalContent={filterSelected}
+        showParameterInfo={filterBoxContent}
+      />
     </div>
   );
 }
