@@ -6,7 +6,7 @@ function ModalSearchBar({ modalContent, showParameterInfo }) {
       return styles.estandarModal;
     } else if (modalContent === "filter") {
       return styles.filterModal;
-    } else if (modalContent !== "search") {
+    } else if (modalContent === "search") {
       return styles.searchModal;
     }
   };
