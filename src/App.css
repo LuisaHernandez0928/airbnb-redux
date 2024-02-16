@@ -1,3 +1,18 @@
 .App {
-  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.galeryConrainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 5vw);
+  grid-gap: 10px;
 }

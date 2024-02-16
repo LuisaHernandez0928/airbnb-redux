@@ -8,15 +8,15 @@ import { TitleFilter } from "../../componets/titleFilter";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "./index.module.css";
 
-function HomeSearchBar() {
+function HomeSearchBar({ closeModal, notifyModalOpened }) {
   const [filterSelected, setFilterSelected] = useState(0);
 
   const notifyFilterSelected = (identifier) => {
     setFilterSelected(identifier);
+    notifyModalOpened();
   };
 
   const filterBoxContent = (identifier) => {
-    console.log(identifier);
     switch (identifier) {
       case 1:
         return <Donde />;
@@ -48,7 +48,7 @@ function HomeSearchBar() {
   };
 
   return (
-    <div className={styles.searchBar}>
+    <div className={styles.searchBar} onClick={(e) => e.stopPropagation()}>
       <div className={styles.parameterContainer}>
         <button id="1wedrty" onClick={() => notifyFilterSelected(1)}>
           <SearchParameter title={"Dónde"} subtitle={"Explora destinos"} />
@@ -71,10 +71,14 @@ function HomeSearchBar() {
           <SearchIcon></SearchIcon>
         </div>
       </button>
-      <ModalSearchBar
-        modalContent={filterSelected}
-        showParameterInfo={filterBoxContent}
-      />
+      {closeModal ? (
+        <></>
+      ) : (
+        <ModalSearchBar
+          modalContent={filterSelected}
+          showParameterInfo={filterBoxContent}
+        />
+      )}
     </div>
   );
 }
