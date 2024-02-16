@@ -1,0 +1,56 @@
+.backgroundToggleActivate {
+  width: 55px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #222;
+  border-radius: 32px;
+  border: 1px solid #222;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.backgroundToggleInactive {
+  width: 55px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #B0B0B0;
+  border-radius: 32px;
+  border: 1px solid #B0B0B0;
+  cursor: pointer;
+  position: relative;
+}
+
+.frontToggleInactive {
+  padding: 0px;
+  width: 32px;
+  height: 31px;
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  border-radius: 50px;
+  border: 1px solid #B0B0B0;
+}
+
+.frontToggleActive {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 31px;
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  border-radius: 50px;
+  border: 1px solid #222;
+}

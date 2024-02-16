@@ -1,0 +1,9 @@
+.descriptionStyle {
+  font-size: 0.875rem;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 100;
+  line-height: 1.125rem;
+  letter-spacing: normal;
+  color: #222;
+  margin-top: 8px;
+}

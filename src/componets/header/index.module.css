@@ -1,0 +1,51 @@
+.searchBar {
+  margin-top: 20px;
+  width: 900px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 8px 14px;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+}
+
+.parameterContainer {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.searchButton {
+  width: 50px;
+  height: 50px;
+  background-color: #ff385c;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
+
+.llegadaParam {
+  background-color: #fff;
+}
+
+.salidaParam {
+  background-color: #f1dc16;
+}
+
+.quienParam {
+  background-color: #7211f1;
+}

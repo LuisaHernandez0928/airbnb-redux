@@ -1,0 +1,55 @@
+.cardContainer {
+  width: 348px;
+  height: 154px;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #DDD;
+  outline: none;
+  background-color: white;
+
+}
+
+.cardContainer:hover {
+  border: 1px solid #222;
+}
+
+.selectedContainer {
+  width: 348px;
+  height: 154px;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;  
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #222;
+  outline: none;
+  background-color: #F7F7F7;
+  transition: step-start;
+}
+
+.textContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.descriptionContainer {
+  margin-top: 4px;
+  width: 100%;
+  text-align: left;
+  color: #717171;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,63 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.radioButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.numericOption {
+  margin: 4px 10px 4px 0px;
+  width: 58px;
+  height: 40px;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  background-color: white;
+  color: #222;
+  border-radius: 40px;
+  border: 1px solid #717171;
+  box-sizing: border-box;
+}
+
+.numericOption:hover { 
+  border: 1px solid #222;
+}
+
+.numericOption:first-child{
+  width: 122px;
+  height: 40px;
+  margin: 4px 10px 4px 0px;
+
+}
+
+.buttonSelectedA:first-child {
+  width: 122px
+
+}
+.buttonSelectedA {
+  margin: 4px 10px 4px 0px;
+  padding: 4px 10px;
+  height: 40px;
+  width: 58px;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.815), #020202dc);
+  color: white;
+  box-shadow: inset 0 2px 8px black;
+  border-radius: 40px;
+}

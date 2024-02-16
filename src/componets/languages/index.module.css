@@ -1,0 +1,64 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  color: #222;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  border-top: 1px solid #DDD;
+}
+
+.sectionContainer {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.boxOptions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: fit-content;
+  box-sizing: border-box;
+  grid-auto-flow: row;
+  color: #222;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 0px;
+  gap: 12px
+}
+
+.noExtend {
+  display: none;
+}
+
+.showButton {
+  padding: 24px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #222;
+}

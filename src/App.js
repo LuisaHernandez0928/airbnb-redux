@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { HomeSearchBar } from "./layouts/homeSearchBar";
+import { FilterBar } from "./componets/filterBar";
 
 function App() {
   const [headerModalSholdBeClosed, setHeaderModalSholdBeClosed] =
@@ -18,6 +19,7 @@ function App() {
         closeModal={headerModalSholdBeClosed}
         notifyModalOpened={notifyModalStatus}
       />
+      <FilterBar />
     </div>
   );
 }

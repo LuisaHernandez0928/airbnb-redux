@@ -1,0 +1,49 @@
+.footerContainer {
+  width: 780px;
+  height: 81px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #DDD;
+  flex-shrink: 0;
+  background-color: white;
+  position: absolute;
+  z-index: 9999;
+  top: 520px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.firstButton {
+  width: fit-content;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.showAirbnb {
+  display: flex;
+  flex-direction: row;
+  width: 197px;
+  height: 48px;
+  padding: 14px 24px;
+  text-align: center;
+  background-color: #222;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  flex-shrink: 0;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0, 1), transform 0.2s cubic-bezier(0.2, 0, 0, 1), ;
+}
+
+.showAirbnb:hover{ 
+  background-color: black;
+}
