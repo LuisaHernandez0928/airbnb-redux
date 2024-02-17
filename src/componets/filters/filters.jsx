@@ -340,22 +340,6 @@ function Filters() {
         bookingOptionsFilter(airbnb, userFilters, getBookingOptions)
     )
   );
-  /*<button onClick={openFilters}>
-        <TuneIcon />
-        <Title text={"Filtros"} />
-      </button>
-      {showFilters && (
-        <div
-          onClick={() => handleClickOutside()}
-          className={styles.aboveScreen}
-        >
-          <ModalSearchBar
-            typeParameter={filters}
-            showParameterInfo={showInfo}
-            destinationSearch={"filter"}
-          />
-        </div>
-      )}*/
 
   return (
     <div className={styles.filtersContainer}>

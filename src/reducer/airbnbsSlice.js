@@ -10,7 +10,19 @@ for (const key in data) {
 }
 
 const initialState = {
-  value: arrayData,
+  airbnbs: arrayData,
+  filters: {
+    tipoAlojamiento: "Cualquier tipo",
+    priceMin: 20,
+    priceMax: 416,
+    rooms: "Cualquiera",
+    beds: "Cualquiera",
+    baths: "Cualquiera",
+    guestsFavorite: false,
+    tipoPropiedad: [],
+    services: [],
+    bookingOptions: [],
+  },
 };
 
 console.log(arrayData);
@@ -18,8 +30,26 @@ export const airbnbsSlice = createSlice({
   name: "airbnbs",
   initialState,
   reducers: {
-    test: (state) => {
-      console.log("aqui");
+    //Las funciones que le asigno al objeto, son funciones que representan lo que debo hacer con la informacion que emite la accion, con el fun de usar esa informacion para alterar el estado
+    changeTypeAccomodationFilter: (state, action) => {
+      //Aqui obtengo el valor del filtro de tipo de alojamiento, que sera una string que le paso a la accion en el dispatch
+      const accomodationType = action.payload;
+      //Aqui le asigno al store, en el estado de filtro.alojamiento ese valor enviado por la accion
+      state.filters.tipoAlojamiento = accomodationType;
+    },
+    changeBedsAmountFilter: (state, action) => {
+      const beds = action.payload;
+      state.filters.beds = beds;
+    },
+    toggleSelectedServiceFilter: (state, action) => {
+      const service = action.payload;
+      const currentFilters = state.filters.services;
+      const index = currentFilters.indexOf(service);
+      if (index !== -1) {
+        currentFilters.splice(index, 1);
+      } else {
+        currentFilters.push(service);
+      }
     },
   },
 });
