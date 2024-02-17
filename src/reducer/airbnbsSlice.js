@@ -1,6 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 import data from "../data/data.json";
 
+import {
+  priceRangeFilter,
+  accommodationTypeFilter,
+  roomsQuantityFilter,
+  bedsQuantityFilter,
+  bathsQuantityFilter,
+  favoritesFilter,
+  propertyTypeFilter,
+  servicesFilter,
+  bookingOptionsFilter,
+  getAirbnbPrices,
+  getAirbnbServices,
+  getBookingOptions,
+} from "./filtersUtils";
+
 export const airbnbsReducerPath = "airbnbs";
 
 const arrayData = [];
@@ -54,6 +69,32 @@ export const airbnbsSlice = createSlice({
   },
 });
 
-export const { test } = airbnbsSlice.actions;
+export const getFilteredAirbnbs = (state) => {
+  const data = state.airbnbs.airbnbs;
+  const userFilters = state.airbnbs.filters;
+  return data.filter(
+    (airbnb) =>
+      priceRangeFilter(
+        airbnb,
+        userFilters.priceMin,
+        userFilters.priceMax,
+        getAirbnbPrices
+      ) &&
+      accommodationTypeFilter(airbnb, userFilters) &&
+      roomsQuantityFilter(airbnb, userFilters) &&
+      bedsQuantityFilter(airbnb, userFilters) &&
+      bathsQuantityFilter(airbnb, userFilters) &&
+      favoritesFilter(airbnb, userFilters) &&
+      propertyTypeFilter(airbnb, userFilters) &&
+      servicesFilter(airbnb, userFilters, getAirbnbServices) &&
+      bookingOptionsFilter(airbnb, userFilters, getBookingOptions)
+  );
+};
+
+export const {
+  changeTypeAccomodationFilter,
+  changeBedsAmountFilter,
+  toggleSelectedServiceFilter,
+} = airbnbsSlice.actions;
 
 export default airbnbsSlice.reducer;

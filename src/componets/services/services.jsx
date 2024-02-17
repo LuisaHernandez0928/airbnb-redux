@@ -8,19 +8,9 @@ import styles from "./index.module.css";
 function Services({ handleServicesChanges, header }) {
   const [showMore, setShowMore] = useState(false);
   const amenities = getAllSections(serviceOptions);
-  const [servicesChecked, setServicesChecked] = useState([]);
 
-  let filteredServices = [];
-  
   const notifyClick = (e, item) => {
-    if (e.target.id === item) {
-      setServicesChecked([...servicesChecked, item]);
-      handleServicesChanges([...servicesChecked, item]);
-    } else if (e.target.id === "") {
-      filteredServices = servicesChecked.filter((elem) => elem !== item);
-      handleServicesChanges(filteredServices);
-      setServicesChecked(filteredServices);
-    }
+    handleServicesChanges(item);
   };
 
   const showServices = () => {
