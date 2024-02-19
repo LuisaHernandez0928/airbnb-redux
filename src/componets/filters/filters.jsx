@@ -19,6 +19,8 @@ import {
   toggleSelectedServiceFilter,
   getFilteredAirbnbs,
   changePriceFilter,
+  changeFavoriteGuestTag,
+  changePropertyFilter,
 } from "../../reducer/airbnbsSlice";
 
 import styles from "./index.module.css";
@@ -54,16 +56,12 @@ function Filters() {
     dispatch(changeBedsRoomsBathsAmountFilter(home));
   };
   const handleFavoriteChanges = (value) => {
-    /*     setUserFilters({
-      ...userFilters,
-      guestsFavorite: value,
-    }); */
+    dispatch(changeFavoriteGuestTag(value));
   };
   const handlePropertyChanges = (casa, casaHuespedes, hotel) => {
-    /*     setUserFilters({
-      ...userFilters,
-      tipoPropiedad: [casa, casaHuespedes, hotel],
-    }); */
+    const property = [casa, casaHuespedes, hotel];
+
+    dispatch(changePropertyFilter(property));
   };
 
   const handleServicesChanges = (value) => {

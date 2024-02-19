@@ -73,6 +73,14 @@ export const airbnbsSlice = createSlice({
       state.filters.priceMin = prices.min;
       state.filters.priceMax = prices.max;
     },
+    changeFavoriteGuestTag: (state, action) => {
+      const favoriteGuestTag = action.payload;
+      state.filters.guestsFavorite = favoriteGuestTag;
+    },
+    changePropertyFilter: (state, action) => {
+      const property = action.payload;
+      state.filters.tipoPropiedad = property;
+    },
   },
 });
 
@@ -103,6 +111,8 @@ export const {
   changeBedsRoomsBathsAmountFilter,
   toggleSelectedServiceFilter,
   changePriceFilter,
+  changeFavoriteGuestTag,
+  changePropertyFilter,
 } = airbnbsSlice.actions;
 
 export default airbnbsSlice.reducer;
