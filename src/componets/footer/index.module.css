@@ -18,12 +18,22 @@
 }
 
 .firstButton {
+  padding: 10px 10px 5px 10px;
   width: fit-content;
   background-color: white;
   border: none;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
+.firstButton:hover {
+  background-color: #ebebeb;
+  border-radius: 16px;
+}
 .showAirbnb {
   display: flex;
   flex-direction: row;

@@ -85,6 +85,9 @@ export const airbnbsSlice = createSlice({
       const bookingOptions = action.payload;
       state.filters.bookingOptions = bookingOptions;
     },
+    removeAllFilters: (state, action) => {
+      state.filters = initialState.filters;
+    },
   },
 });
 
@@ -108,6 +111,10 @@ export const getFilteredAirbnbs = (state) => {
       servicesFilter(airbnb, userFilters, getAirbnbServices) &&
       bookingOptionsFilter(airbnb, userFilters, getBookingOptions)
   );
+};
+
+export const getAirbnbNumberUpdated = (state) => {
+  return getFilteredAirbnbs(state).length;
 };
 
 export const {

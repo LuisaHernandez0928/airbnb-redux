@@ -1,10 +1,15 @@
+import { useSelector } from "react-redux";
+import { getAirbnbNumberUpdated } from "../../reducer/airbnbsSlice";
 import { Title } from "../title";
 import styles from "./index.module.css";
 
 function Footer() {
+  const updatedNumberOfAirbnbs = useSelector(getAirbnbNumberUpdated);
 
   const buttonFilter = (airbnbs) => {
-    return <button className={styles.showAirbnb}>Mostrar {airbnbs} lugares</button>;
+    return (
+      <button className={styles.showAirbnb}>Mostrar {airbnbs} lugares</button>
+    );
   };
 
   return (
@@ -12,7 +17,7 @@ function Footer() {
       <button className={styles.firstButton}>
         <Title text={"Quitar todos"} cardFilter={true} />
       </button>
-      {buttonFilter(634)}
+      {buttonFilter(updatedNumberOfAirbnbs)}
     </footer>
   );
 }
