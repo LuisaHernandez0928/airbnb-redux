@@ -68,13 +68,10 @@ export const airbnbsSlice = createSlice({
         currentFilters.push(service);
       }
     },
-    changeRoomsAmountFilter: (state, action) => {
-      const rooms = action.payload;
-      state.filters.rooms = rooms;
-    },
-    changeBathsAmountFilter: (state, action) => {
-      const baths = action.payload;
-      state.filters.baths = baths;
+    changePriceFilter: (state, action) => {
+      const prices = action.payload;
+      state.filters.priceMin = prices.min;
+      state.filters.priceMax = prices.max;
     },
   },
 });
@@ -105,6 +102,7 @@ export const {
   changeTypeAccomodationFilter,
   changeBedsRoomsBathsAmountFilter,
   toggleSelectedServiceFilter,
+  changePriceFilter,
 } = airbnbsSlice.actions;
 
 export default airbnbsSlice.reducer;

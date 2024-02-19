@@ -18,6 +18,7 @@ import {
   changeBedsRoomsBathsAmountFilter,
   toggleSelectedServiceFilter,
   getFilteredAirbnbs,
+  changePriceFilter,
 } from "../../reducer/airbnbsSlice";
 
 import styles from "./index.module.css";
@@ -37,11 +38,11 @@ function Filters() {
   };
 
   const handlePriceChanges = (minValue, maxValue) => {
-    /*     setUserFilters({
-      ...userFilters,
-      priceMin: minValue,
-      priceMax: maxValue,
-    }); */
+    const prices = {
+      min: minValue,
+      max: maxValue,
+    };
+    dispatch(changePriceFilter(prices));
   };
 
   const handleHomeChanges = (rooms, beds, baths) => {
