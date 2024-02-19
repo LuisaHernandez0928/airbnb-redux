@@ -21,6 +21,7 @@ import {
   changePriceFilter,
   changeFavoriteGuestTag,
   changePropertyFilter,
+  toggleBookingOptsFilter,
 } from "../../reducer/airbnbsSlice";
 
 import styles from "./index.module.css";
@@ -69,10 +70,7 @@ function Filters() {
   };
 
   const handleBookingChanges = (value) => {
-    /*     setUserFilters({
-      ...userFilters,
-      bookingOptions: value,
-    }); */
+    dispatch(toggleBookingOptsFilter(value));
   };
 
   const showInfo = (content) => {

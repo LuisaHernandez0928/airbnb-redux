@@ -81,6 +81,10 @@ export const airbnbsSlice = createSlice({
       const property = action.payload;
       state.filters.tipoPropiedad = property;
     },
+    toggleBookingOptsFilter: (state, action) => {
+      const bookingOptions = action.payload;
+      state.filters.bookingOptions = bookingOptions;
+    },
   },
 });
 
@@ -113,6 +117,7 @@ export const {
   changePriceFilter,
   changeFavoriteGuestTag,
   changePropertyFilter,
+  toggleBookingOptsFilter,
 } = airbnbsSlice.actions;
 
 export default airbnbsSlice.reducer;
