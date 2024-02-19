@@ -117,6 +117,10 @@ export const getAirbnbNumberUpdated = (state) => {
   return getFilteredAirbnbs(state).length;
 };
 
+export const getAccommodationType = (state) => {
+  return state.airbnbs.filters.tipoAlojamiento;
+};
+
 export const {
   changeTypeAccomodationFilter,
   changeBedsRoomsBathsAmountFilter,
@@ -125,6 +129,7 @@ export const {
   changeFavoriteGuestTag,
   changePropertyFilter,
   toggleBookingOptsFilter,
+  removeAllFilters,
 } = airbnbsSlice.actions;
 
 export default airbnbsSlice.reducer;
