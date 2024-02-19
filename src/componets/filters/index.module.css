@@ -5,7 +5,7 @@
   height: 48px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   border-radius: 8px;
   background-color: transparent;
   margin: 18px;
@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-.filtersContainer>button {
+.filtersContainer > button {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -26,22 +26,28 @@
 }
 
 .filterLayout {
-  height: 560px;
+  position: relative;
+  width: 780px;
+  max-height: 839px;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
-  width: 780px;
+  overflow: clip;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
+  background-color: white;
+  box-sizing: border-box;
 }
-
-.filterComponents{
-  display: flex;
-  flex-direction: column;
+.verticalEnds {
   width: 100%;
+  height: 66px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.filterComponents {
+  display: block;
   height: 100%;
-  position: relative;
-  top: 60px;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 .aboveScreen {
   position: fixed;
@@ -54,5 +60,4 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-
 }

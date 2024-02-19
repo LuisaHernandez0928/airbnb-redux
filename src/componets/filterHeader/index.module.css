@@ -8,11 +8,11 @@
   align-items: center;
   box-sizing: border-box;
   flex-shrink: 0;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
   background-color: white;
-  position: fixed;
+  position: absolute;
+  top: 0;
   z-index: 9999;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-
 }

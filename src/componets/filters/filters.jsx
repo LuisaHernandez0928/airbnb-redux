@@ -74,7 +74,7 @@ function Filters() {
   };
 
   const showInfo = (content) => {
-    return <div>{content}</div>;
+    return <>{content}</>;
   };
 
   const openFilters = () => {
@@ -87,41 +87,47 @@ function Filters() {
 
   const filters = (
     <div className={styles.filterLayout}>
-      <Header />
-      <div className={styles.filterComponents}>
-        <RadioButton
-          handleAlojamientoChanges={handleAlojamientoChanges}
-          header={"Tipo de alojamiento"}
-        />
-        <MemoizedRangePrices
-          data={data}
-          handlePriceChanges={handlePriceChanges}
-          header={"Rango precios"}
-        />
-        <HabitacionesCamas
-          handleHomeChanges={handleHomeChanges}
-          header={"Habitaciones y camas"}
-        />
-        <Prizes
-          handleFavoriteChanges={handleFavoriteChanges}
-          header={"Alojamientos de primera"}
-        />
-        <Properties
-          handlePropertyChanges={handlePropertyChanges}
-          header={"Tipo de propiedad"}
-        />
-        <Services
-          handleServicesChanges={handleServicesChanges}
-          header={"Servicios"}
-        />
-        <OpcionesReserva
-          handleBookingChanges={handleBookingChanges}
-          header={"Opciones de reserva"}
-        />
-        <Accesibility header={"Prestaciones de accesibilidad"} />
-        <Languages header={"Idioma del anfitrion"} />
+      <div style={{ display: "contents" }}>
+        <div className={styles.verticalEnds}>
+          <Header />
+        </div>
+        <div className={styles.filterComponents}>
+          <RadioButton
+            handleAlojamientoChanges={handleAlojamientoChanges}
+            header={"Tipo de alojamiento"}
+          />
+          <MemoizedRangePrices
+            data={data}
+            handlePriceChanges={handlePriceChanges}
+            header={"Rango precios"}
+          />
+          <HabitacionesCamas
+            handleHomeChanges={handleHomeChanges}
+            header={"Habitaciones y camas"}
+          />
+          <Prizes
+            handleFavoriteChanges={handleFavoriteChanges}
+            header={"Alojamientos de primera"}
+          />
+          <Properties
+            handlePropertyChanges={handlePropertyChanges}
+            header={"Tipo de propiedad"}
+          />
+          <Services
+            handleServicesChanges={handleServicesChanges}
+            header={"Servicios"}
+          />
+          <OpcionesReserva
+            handleBookingChanges={handleBookingChanges}
+            header={"Opciones de reserva"}
+          />
+          <Accesibility header={"Prestaciones de accesibilidad"} />
+          <Languages header={"Idioma del anfitrion"} />
+        </div>
+        <div className={styles.verticalEnds}>
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </div>
   );
 

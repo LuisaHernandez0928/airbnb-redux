@@ -1,10 +1,14 @@
 import styles from "./index.module.css";
 
-function ModalSearchBar({ modalContent, showParameterInfo }) {
+function ModalSearchBar({
+  modalContent,
+  showParameterInfo,
+  destinationSearch,
+}) {
   const selectTypeModal = () => {
     if (Number(modalContent)) {
       return styles.estandarModal;
-    } else if (modalContent === "filter") {
+    } else if (destinationSearch === "filter") {
       return styles.filterModal;
     } else if (modalContent === "search") {
       return styles.searchModal;
