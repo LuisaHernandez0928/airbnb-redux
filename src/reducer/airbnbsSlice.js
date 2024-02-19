@@ -52,9 +52,11 @@ export const airbnbsSlice = createSlice({
       //Aqui le asigno al store, en el estado de filtro.alojamiento ese valor enviado por la accion
       state.filters.tipoAlojamiento = accomodationType;
     },
-    changeBedsAmountFilter: (state, action) => {
-      const beds = action.payload;
-      state.filters.beds = beds;
+    changeBedsRoomsBathsAmountFilter: (state, action) => {
+      const home = action.payload;
+      state.filters.beds = home.beds;
+      state.filters.rooms = home.rooms;
+      state.filters.baths = home.baths;
     },
     toggleSelectedServiceFilter: (state, action) => {
       const service = action.payload;
@@ -67,12 +69,12 @@ export const airbnbsSlice = createSlice({
       }
     },
     changeRoomsAmountFilter: (state, action) => {
-      const beds = action.payload;
-      state.filters.beds = beds;
+      const rooms = action.payload;
+      state.filters.rooms = rooms;
     },
-    changeRoomsAmountFilter: (state, action) => {
-      const beds = action.payload;
-      state.filters.beds = beds;
+    changeBathsAmountFilter: (state, action) => {
+      const baths = action.payload;
+      state.filters.baths = baths;
     },
   },
 });
@@ -101,7 +103,7 @@ export const getFilteredAirbnbs = (state) => {
 
 export const {
   changeTypeAccomodationFilter,
-  changeBedsAmountFilter,
+  changeBedsRoomsBathsAmountFilter,
   toggleSelectedServiceFilter,
 } = airbnbsSlice.actions;
 

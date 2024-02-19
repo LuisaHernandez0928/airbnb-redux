@@ -15,7 +15,7 @@ import { Footer } from "../footer/footer";
 import { Header } from "../filterHeader/header";
 import {
   changeTypeAccomodationFilter,
-  changeBedsAmountFilter,
+  changeBedsRoomsBathsAmountFilter,
   toggleSelectedServiceFilter,
   getFilteredAirbnbs,
 } from "../../reducer/airbnbsSlice";
@@ -26,19 +26,6 @@ import TuneIcon from "@mui/icons-material/Tune";
 function Filters() {
   const [showFilters, setShowFilters] = useState(false);
   const dispatch = useDispatch();
-
-  /*const [userFilters, setUserFilters] = useState({
-    tipoAlojamiento: "Cualquier tipo",
-    priceMin: 20,
-    priceMax: 416,
-    rooms: "Cualquiera",
-    beds: "Cualquiera",
-    baths: "Cualquiera",
-    guestsFavorite: false,
-    tipoPropiedad: [],
-    services: [],
-    bookingOptions: [],
-  });*/
 
   const data = useSelector((state) => state.airbnbs.airbnbs);
 
@@ -58,12 +45,12 @@ function Filters() {
   };
 
   const handleHomeChanges = (rooms, beds, baths) => {
-    /*     setUserFilters({
-      ...userFilters,
+    const home = {
       rooms: rooms,
       beds: beds,
       baths: baths,
-    }); */
+    };
+    dispatch(changeBedsRoomsBathsAmountFilter(home));
   };
   const handleFavoriteChanges = (value) => {
     /*     setUserFilters({
