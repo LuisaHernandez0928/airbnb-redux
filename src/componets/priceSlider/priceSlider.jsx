@@ -17,7 +17,6 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
   const maxValRef = useRef(max);
   const range = useRef(null);
 
-  console.log(minPrice, maxPrice, min, max, removedFilters);
   const modifyMaxSlider = (e) => {
     let val;
     if (e.target.value === "") {

@@ -59,7 +59,11 @@ function Filters() {
     dispatch(changeFavoriteGuestTag(value));
   };
   const handlePropertyChanges = (casa, casaHuespedes, hotel) => {
-    const property = [casa, casaHuespedes, hotel];
+    const property = {
+      casa,
+      casaHuespedes,
+      hotel,
+    };
 
     dispatch(changePropertyFilter(property));
   };

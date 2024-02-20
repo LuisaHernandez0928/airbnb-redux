@@ -34,7 +34,11 @@ const initialState = {
     beds: "Cualquiera",
     baths: "Cualquiera",
     guestsFavorite: false,
-    tipoPropiedad: [],
+    tipoPropiedad: {
+      casa: false,
+      casaHuespedes: false,
+      hotel: false,
+    },
     services: [],
     bookingOptions: [],
   },
@@ -78,6 +82,7 @@ export const airbnbsSlice = createSlice({
     changeFavoriteGuestTag: (state, action) => {
       const favoriteGuestTag = action.payload;
       state.filters.guestsFavorite = favoriteGuestTag;
+      state.removedFilters = false;
     },
     changePropertyFilter: (state, action) => {
       const property = action.payload;
@@ -136,6 +141,14 @@ export const getAirbnbNumberUpdated = (state) => {
 
 export const getAccommodationType = (state) => {
   return state.airbnbs.filters.tipoAlojamiento;
+};
+
+export const getFavoriteGuestTag = (state) => {
+  return state.airbnbs.filters.guestsFavorite;
+};
+
+export const getTipoPropiedad = (state) => {
+  return state.airbnbs.filters.tipoPropiedad;
 };
 
 export const getMinPrice = (state) => {

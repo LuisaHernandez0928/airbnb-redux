@@ -1,18 +1,9 @@
-import { useState } from "react";
 import { CardFilter } from "../cardFilter";
 import { Title } from "../title";
 import { TitleFilter } from "../titleFilter";
 import styles from "./index.module.css";
 
-function Prizes({handleFavoriteChanges,header}) {
-
-  const [cardSelected, setCardSelected] =  useState(false);
-
-  const notifyClick = () =>{
-    setCardSelected(!cardSelected);
-    handleFavoriteChanges(!cardSelected);
-  }
-
+function Prizes({ handleFavoriteChanges, header }) {
   return (
     <div className={styles.prizes}>
       <TitleFilter text={header} />
@@ -38,9 +29,9 @@ function Prizes({handleFavoriteChanges,header}) {
         description={
           "Segun los huéspedes, estos son los alojamientos más populares en Airbnb"
         }
-        notifyClick={notifyClick}
         width={"348px"}
         height={"154px"}
+        handleFavoriteChanges={handleFavoriteChanges}
       />
     </div>
   );

@@ -80,51 +80,26 @@ export const favoritesFilter = (airbnb, favoriteSelected) => {
 };
 
 export const propertyTypeFilter = (airbnb, propertiesSelected) => {
+  const currentlySelectedPropertyFilters = propertiesSelected.tipoPropiedad;
   if (
-    (propertiesSelected.tipoPropiedad[0] &&
-      propertiesSelected.tipoPropiedad[1] &&
-      propertiesSelected.tipoPropiedad[2]) ||
-    (!propertiesSelected.tipoPropiedad[0] &&
-      !propertiesSelected.tipoPropiedad[1] &&
-      !propertiesSelected.tipoPropiedad[2])
-  ) {
+    !currentlySelectedPropertyFilters.casaHuespedes &&
+    !currentlySelectedPropertyFilters.hotel &&
+    !currentlySelectedPropertyFilters.casa
+  )
     return true;
-  } else if (
-    propertiesSelected.tipoPropiedad[0] === true &&
-    propertiesSelected.tipoPropiedad[1] === true &&
-    (airbnb.tipoPropiedad === "Casa" ||
-      airbnb.tipoPropiedad === "Casa de huespedes")
-  ) {
+  if (
+    airbnb.tipoPropiedad === "Casa de huespedes" &&
+    currentlySelectedPropertyFilters.casaHuespedes
+  )
     return true;
-  } else if (
-    propertiesSelected.tipoPropiedad[0] === true &&
-    propertiesSelected.tipoPropiedad[2] === true &&
-    (airbnb.tipoPropiedad === "Casa" || airbnb.tipoPropiedad === "Hotel")
-  ) {
+  if (
+    airbnb.tipoPropiedad === "Hotel" &&
+    currentlySelectedPropertyFilters.hotel
+  )
     return true;
-  } else if (
-    propertiesSelected.tipoPropiedad[1] === true &&
-    propertiesSelected.tipoPropiedad[2] === true &&
-    (airbnb.tipoPropiedad === "Casa de huespedes" ||
-      airbnb.tipoPropiedad === "Hotel")
-  ) {
+  if (airbnb.tipoPropiedad === "Casa" && currentlySelectedPropertyFilters.casa)
     return true;
-  } else if (
-    propertiesSelected.tipoPropiedad[0] === true &&
-    airbnb.tipoPropiedad === "Casa"
-  ) {
-    return true;
-  } else if (
-    propertiesSelected.tipoPropiedad[1] === true &&
-    airbnb.tipoPropiedad === "Casa de huespedes"
-  ) {
-    return true;
-  } else if (
-    propertiesSelected.tipoPropiedad[2] === true &&
-    airbnb.tipoPropiedad === "Hotel"
-  ) {
-    return true;
-  }
+  return false;
 };
 
 export const getAirbnbServices = (data) => {

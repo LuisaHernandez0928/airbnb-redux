@@ -1,34 +1,15 @@
-import { useState } from "react";
 import { CardFilter } from "../cardFilter";
 import { Title } from "../title";
 import { TitleFilter } from "../titleFilter";
 import styles from "./index.module.css";
 
-function Properties({ handlePropertyChanges,header }) {
-  const [casa, setCasa] = useState(false);
-  const [casaHuespedes, setCasaHuespedes] = useState(false);
-  const [hotel, setHotel] = useState(false);
-
-  const notifyClick = (e) => {
-    if (e.target.innerText === "Casa") {
-      setCasa(!casa);
-      handlePropertyChanges(!casa, casaHuespedes, hotel);
-    }
-    if (e.target.innerText === "Casa de huespedes") {
-      setCasaHuespedes(!casaHuespedes);
-      handlePropertyChanges(casa, !casaHuespedes, hotel);
-    }
-    if (e.target.innerText === "Hotel") {
-      setHotel(!hotel);
-      handlePropertyChanges(casa, casaHuespedes, !hotel);
-    }
-  };
-
+function Properties({ handlePropertyChanges, header }) {
   return (
     <div className={styles.propertiesContainer}>
       <TitleFilter text={header} />
       <div className={styles.propertyCardsRow}>
         <CardFilter
+          name="casa"
           text={<Title text={"Casa"} cardFilter={true} />}
           icon={
             <img
@@ -37,11 +18,12 @@ function Properties({ handlePropertyChanges,header }) {
               alt="Casa"
             />
           }
-          notifyClick={notifyClick}
+          handlePropertyChanges={handlePropertyChanges}
           width={"166px"}
           height={"124px"}
         />
         <CardFilter
+          name="casaHuespedes"
           text={<Title text={"Casa de huespedes"} cardFilter={true} />}
           icon={
             <img
@@ -50,11 +32,12 @@ function Properties({ handlePropertyChanges,header }) {
               alt="Casa de huespedes"
             />
           }
-          notifyClick={notifyClick}
+          handlePropertyChanges={handlePropertyChanges}
           width={"166px"}
           height={"124px"}
         />
         <CardFilter
+          name="hotel"
           text={<Title text={"Hotel"} cardFilter={true} />}
           icon={
             <img
@@ -63,7 +46,7 @@ function Properties({ handlePropertyChanges,header }) {
               alt=""
             />
           }
-          notifyClick={notifyClick}
+          handlePropertyChanges={handlePropertyChanges}
           width={"166px"}
           height={"124px"}
         />
