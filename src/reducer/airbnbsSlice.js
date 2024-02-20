@@ -120,6 +120,16 @@ export const notifyFiltersRemoved = (state) => {
   return state.airbnbs.removedFilters;
 };
 
+export const notifyButtonSelected = (state, subtitle) => {
+  if (subtitle === "Habitaciones") {
+    return state.airbnbs.filters.rooms;
+  } else if (subtitle === "Camas") {
+    return state.airbnbs.filters.beds;
+  } else if (subtitle === "Baños") {
+    return state.airbnbs.filters.baths;
+  }
+};
+
 export const getAirbnbNumberUpdated = (state) => {
   return getFilteredAirbnbs(state).length;
 };

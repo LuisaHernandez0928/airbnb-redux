@@ -1,15 +1,14 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
+import { notifyButtonSelected } from "../../reducer/airbnbsSlice";
 import { DescriptionFilter } from "../descriptionFilter";
 import styles from "./index.module.css";
 
-function RadioButtonSeparated({
-  subtitle,
-  notifyRoomChanged,
-}) {
-  const [buttonSelected, setButtonSelected] = useState("Cualquiera");
+function RadioButtonSeparated({ subtitle, notifyRoomChanged }) {
+  const buttonSelected = useSelector((state) =>
+    notifyButtonSelected(state, subtitle)
+  );
 
   const notifyButton = (e) => {
-    setButtonSelected(e.target.innerText);
     notifyRoomChanged(subtitle, e.target.innerText);
   };
   return (
