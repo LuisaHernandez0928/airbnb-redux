@@ -1,11 +1,8 @@
-import styles from "./index.module.css";
 import { Toggle } from "../toggle";
 import { TitleFilter } from "../titleFilter";
-import { useState } from "react";
+import styles from "./index.module.css";
 
 function OpcionesReserva({ handleBookingChanges, header }) {
-  const [selectedOptions, setSelectedOptions] = useState([]);
-
   const bookingTitle = [
     "Reserva inmediata",
     "Llegada autonoma",
@@ -17,19 +14,9 @@ function OpcionesReserva({ handleBookingChanges, header }) {
     "¿Traes a un animal de servicio?",
   ];
 
-  let filteredServices = [];
-
-  const notifyClick = (item) => {
-    if (selectedOptions.find((elem) => elem === item) + 1) {
-      filteredServices = selectedOptions.filter((elem) => elem !== item);
-      handleBookingChanges(filteredServices);
-      setSelectedOptions(filteredServices);
-    } else {
-      setSelectedOptions([...selectedOptions, item]);
-      handleBookingChanges([...selectedOptions, item]);
-    }
+  const notifyClick = (index) => {
+    handleBookingChanges(index);
   };
-
   return (
     <div className={styles.reservasContainer}>
       <TitleFilter text={header} />

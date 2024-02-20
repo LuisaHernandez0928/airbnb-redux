@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
+import { getSelectedBookingOptions } from "../../reducer/airbnbsSlice";
 import styles from "./index.module.css";
 
 function Toggle({ id, notifyClick }) {
-  const [activate, setActivate] = useState(false);
+  const selectedOptions = useSelector(getSelectedBookingOptions);
 
   const notifyToggle = (id) => {
     notifyClick(id);
-    setActivate(!activate);
   };
 
-  if (activate) {
+  if (selectedOptions.includes(id)) {
     return (
       <div
         style={{ width: "fit-content", height: "54px" }}

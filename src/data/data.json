@@ -757,7 +757,10 @@
     "services": [
       { "name": "Wifi", "value": true },
       { "name": "Piscina", "value": true },
-      { "name": "Parrilla", "value": true }
+      { "name": "Parrilla", "value": true },
+      { "name": "Calefaccion", "value": true },
+      { "name": "Linea de playa", "value": true },
+      { "name": "Desayuno", "value": true }
     ],
     "bookingOptions": [
       { "name": "Reserva inmediata", "value": true },
@@ -802,7 +805,10 @@
     "services": [
       { "name": "Wifi", "value": true },
       { "name": "Plancha", "value": true },
-      { "name": "Zona de trabajo", "value": true }
+      { "name": "Zona de trabajo", "value": true },
+      { "name": "Calefaccion", "value": true },
+      { "name": "Linea de playa", "value": true },
+      { "name": "Desayuno", "value": true }
     ],
     "bookingOptions": [{ "name": "Reserva inmediata", "value": true }],
     "location": {
@@ -889,7 +895,10 @@
     "services": [
       { "name": "Wifi", "value": true },
       { "name": "Zona de trabajo", "value": true },
-      { "name": "Camaras de seguridad", "value": true }
+      { "name": "Camaras de seguridad", "value": true },
+      { "name": "Calefaccion", "value": true },
+      { "name": "Linea de playa", "value": true },
+      { "name": "Desayuno", "value": true }
     ],
     "bookingOptions": [
       { "name": "Reserva inmediata", "value": true },

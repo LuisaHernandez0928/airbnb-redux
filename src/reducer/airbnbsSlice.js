@@ -90,8 +90,15 @@ export const airbnbsSlice = createSlice({
       state.filters.tipoPropiedad = property;
     },
     toggleBookingOptsFilter: (state, action) => {
-      const bookingOptions = action.payload;
-      state.filters.bookingOptions = bookingOptions;
+      state.removedFilters = false;
+      const bookingOpts = action.payload;
+      const currentFilters = state.filters.bookingOptions;
+      const index = currentFilters.indexOf(bookingOpts);
+      if (index !== -1) {
+        currentFilters.splice(index, 1);
+      } else {
+        currentFilters.push(bookingOpts);
+      }
     },
     removeAllFilters: (state, action) => {
       state.removedFilters = true;
@@ -159,8 +166,13 @@ export const getFavoriteGuestTag = (state) => {
 export const getTipoPropiedad = (state) => {
   return state.airbnbs.filters.tipoPropiedad;
 };
+
 export const getSelectedServices = (state) => {
   return state.airbnbs.filters.services;
+};
+
+export const getSelectedBookingOptions = (state) => {
+  return state.airbnbs.filters.bookingOptions;
 };
 
 export const {
