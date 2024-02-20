@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import { getMinPrice, getMaxPrice } from "../../reducer/airbnbsSlice";
 import styles from "./index.module.css";
