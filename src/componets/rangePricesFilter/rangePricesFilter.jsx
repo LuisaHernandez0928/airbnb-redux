@@ -1,4 +1,4 @@
-import { useState, memo } from "react";
+import { memo } from "react";
 import { useSelector } from "react-redux";
 import { DescriptionFilter } from "../descriptionFilter";
 import { GraphPriceSlider } from "../graphPriceSlider";

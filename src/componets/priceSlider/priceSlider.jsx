@@ -1,34 +1,41 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
-import { getMinPrice, getMaxPrice } from "../../reducer/airbnbsSlice";
+import {
+  getMinPrice,
+  getMaxPrice,
+  notifyFiltersRemoved,
+} from "../../reducer/airbnbsSlice";
 import styles from "./index.module.css";
 
 const MultiRangeSlider = ({ min, max, onChange }) => {
+  const minPrice = useSelector(getMinPrice);
+  const maxPrice = useSelector(getMaxPrice);
+  const removedFilters = useSelector(notifyFiltersRemoved);
+  const [minInput, setMinInput] = useState(minPrice);
+  const [maxInput, setMaxInput] = useState(maxPrice);
   const minValRef = useRef(min);
   const maxValRef = useRef(max);
   const range = useRef(null);
-  const minPrice = useSelector(getMinPrice);
-  const maxPrice = useSelector(getMaxPrice);
 
+  console.log(minPrice, maxPrice, min, max, removedFilters);
   const modifyMaxSlider = (e) => {
     let val;
     if (e.target.value === "") {
       val = max;
-      //setMaxInput(e.target.value);
+      setMaxInput(e.target.value);
     } else if (e.target.value <= minPrice) {
       val = minPrice + 1;
-      //setMaxInput(e.target.value);
+      setMaxInput(e.target.value);
     } else if (e.target.value >= max) {
       val = max;
-      //setMaxInput(e.target.value);
+      setMaxInput(e.target.value);
     } else if (!Number(e.target.value)) {
       val = max;
-      //setMaxInput(max);
+      setMaxInput(max);
     } else {
       val = e.target.value;
-      //setMaxInput(e.target.value);
+      setMaxInput(e.target.value);
     }
-    //setMaxVal(val);
     onChange({ min: minPrice, max: val });
   };
 
@@ -36,24 +43,19 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
     let val;
     if (e.target.value === "") {
       val = min;
-      //setMinVal(min);
-      //setMinInput(e.target.value);
+      setMinInput(e.target.value);
     } else if (e.target.value >= maxPrice) {
       val = maxPrice - 1;
-      //setMinVal(maxVal - 1);
-      //setMinInput(e.target.value);
+      setMinInput(e.target.value);
     } else if (e.target.value <= min) {
       val = min;
-      // setMinVal(min);
-      //setMinInput(e.target.value);
+      setMinInput(e.target.value);
     } else if (!Number(e.target.value)) {
       val = min;
-      //setMinVal(min);
-      //setMinInput(min);
+      setMinInput(min);
     } else {
       val = e.target.value;
-      //setMinInput(e.target.value);
-      //setMinVal(e.target.value);
+      setMinInput(e.target.value);
     }
     onChange({ min: val, max: maxPrice });
   };
@@ -89,11 +91,6 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
     }
   }, [maxPrice, min, max]);
 
-  // Get min and max values when their state changes
-  useEffect(() => {
-    // onChange({ min: minVal, max: maxVal});
-  }, [minPrice, maxPrice, onChange]);
-
   return (
     <div className={styles.container}>
       <div className={styles.barraConlosCirculos}>
@@ -105,9 +102,8 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
           value={minPrice}
           onChange={(event) => {
             const value = Math.min(Number(event.target.value), maxPrice - 1);
-            //setMinVal(value);
-            // setMinInput(value);
             onChange({ min: value, max: maxPrice });
+            setMinInput(value);
           }}
           className={styles.thumb + " " + styles.thumbLeft}
         />
@@ -119,9 +115,8 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
           value={maxPrice}
           onChange={(event) => {
             const value = Math.max(Number(event.target.value), minPrice + 1);
-            //setMaxVal(value);
-            //setMaxInput(value);
             onChange({ min: minPrice, max: value });
+            setMaxInput(value);
           }}
           className={styles.thumb + " " + styles.thumbRight}
         />
@@ -137,7 +132,7 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
             <span aria-hidden="true">$</span>
             <input
               type="text"
-              value={minPrice}
+              value={removedFilters ? minPrice : minInput}
               onChange={(e) => modifyMinSlider(e)}
             />
           </div>
@@ -149,7 +144,7 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
             <span aria-hidden="true">$</span>
             <input
               type="text"
-              value={maxPrice}
+              value={removedFilters ? maxPrice : maxInput}
               onChange={(e) => modifyMaxSlider(e)}
             />
           </div>

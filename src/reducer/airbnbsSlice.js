@@ -38,6 +38,7 @@ const initialState = {
     services: [],
     bookingOptions: [],
   },
+  removedFilters: false,
 };
 
 console.log(arrayData);
@@ -72,6 +73,7 @@ export const airbnbsSlice = createSlice({
       const prices = action.payload;
       state.filters.priceMin = prices.min;
       state.filters.priceMax = prices.max;
+      state.removedFilters = false;
     },
     changeFavoriteGuestTag: (state, action) => {
       const favoriteGuestTag = action.payload;
@@ -86,6 +88,7 @@ export const airbnbsSlice = createSlice({
       state.filters.bookingOptions = bookingOptions;
     },
     removeAllFilters: (state, action) => {
+      state.removedFilters = true;
       state.filters = initialState.filters;
     },
   },
@@ -111,6 +114,10 @@ export const getFilteredAirbnbs = (state) => {
       servicesFilter(airbnb, userFilters, getAirbnbServices) &&
       bookingOptionsFilter(airbnb, userFilters, getBookingOptions)
   );
+};
+
+export const notifyFiltersRemoved = (state) => {
+  return state.airbnbs.removedFilters;
 };
 
 export const getAirbnbNumberUpdated = (state) => {
