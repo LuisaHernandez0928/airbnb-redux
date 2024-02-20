@@ -1,24 +1,28 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { notifyFiltersRemoved } from "../../reducer/airbnbsSlice";
 import styles from "./index.module.css";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 
 function CheckBox({ id }) {
   const [selectedOption, setSelectedOption] = useState(false);
 
-  const notifyAmenity = (e) => {
+  const removeSelectedItems = useSelector(notifyFiltersRemoved);
+
+  const notifyAmenity = () => {
     setSelectedOption(!selectedOption);
   };
-  if (!selectedOption) {
+  if (removeSelectedItems ? removeSelectedItems : !selectedOption) {
     return (
       <div
         id={id}
         className={styles.checkBox}
-        onClick={(e) => notifyAmenity(e)}
+        onClick={() => notifyAmenity()}
       ></div>
     );
   } else {
     return (
-      <CheckBoxIcon sx={{ fontSize: 30 }} onClick={(e) => notifyAmenity(e)} />
+      <CheckBoxIcon sx={{ fontSize: 30 }} onClick={() => notifyAmenity()} />
     );
   }
 }

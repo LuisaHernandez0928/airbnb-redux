@@ -64,6 +64,7 @@ export const airbnbsSlice = createSlice({
       state.filters.baths = home.baths;
     },
     toggleSelectedServiceFilter: (state, action) => {
+      state.removedFilters = false;
       const service = action.payload;
       const currentFilters = state.filters.services;
       const index = currentFilters.indexOf(service);
@@ -125,6 +126,18 @@ export const notifyFiltersRemoved = (state) => {
   return state.airbnbs.removedFilters;
 };
 
+export const getAccommodationType = (state) => {
+  return state.airbnbs.filters.tipoAlojamiento;
+};
+
+export const getMinPrice = (state) => {
+  return state.airbnbs.filters.priceMin;
+};
+
+export const getMaxPrice = (state) => {
+  return state.airbnbs.filters.priceMax;
+};
+
 export const notifyButtonSelected = (state, subtitle) => {
   if (subtitle === "Habitaciones") {
     return state.airbnbs.filters.rooms;
@@ -139,10 +152,6 @@ export const getAirbnbNumberUpdated = (state) => {
   return getFilteredAirbnbs(state).length;
 };
 
-export const getAccommodationType = (state) => {
-  return state.airbnbs.filters.tipoAlojamiento;
-};
-
 export const getFavoriteGuestTag = (state) => {
   return state.airbnbs.filters.guestsFavorite;
 };
@@ -150,14 +159,10 @@ export const getFavoriteGuestTag = (state) => {
 export const getTipoPropiedad = (state) => {
   return state.airbnbs.filters.tipoPropiedad;
 };
-
-export const getMinPrice = (state) => {
-  return state.airbnbs.filters.priceMin;
+export const getSelectedServices = (state) => {
+  return state.airbnbs.filters.services;
 };
 
-export const getMaxPrice = (state) => {
-  return state.airbnbs.filters.priceMax;
-};
 export const {
   changeTypeAccomodationFilter,
   changeBedsRoomsBathsAmountFilter,
