@@ -1,13 +1,15 @@
-import { useState, memo} from "react";
+import { useState, memo } from "react";
+import { useSelector } from "react-redux";
 import { DescriptionFilter } from "../descriptionFilter";
 import { GraphPriceSlider } from "../graphPriceSlider";
 import { MultiRangeSlider } from "../priceSlider/priceSlider";
 import { TitleFilter } from "../titleFilter";
+import { getMinPrice, getMaxPrice } from "../../reducer/airbnbsSlice";
 import styles from "./index.module.css";
 
-function RangePrices({ data, handlePriceChanges, header}) {
-  const [min, setMin] = useState(20);
-  const [max, setMax] = useState(460);
+function RangePrices({ data, handlePriceChanges, header }) {
+  const minPrice = useSelector(getMinPrice);
+  const maxPrice = useSelector(getMaxPrice);
 
   return (
     <div className={styles.layoutPrices}>
@@ -18,21 +20,22 @@ function RangePrices({ data, handlePriceChanges, header}) {
         />
       </div>
       <div className={styles.graphSlider}>
-        <GraphPriceSlider data={data} minPrice={Number(min)} maxPrice={Number(max)}/>
+        <GraphPriceSlider
+          data={data}
+          minPrice={Number(minPrice)}
+          maxPrice={Number(maxPrice)}
+        />
         <MultiRangeSlider
           min={20}
           max={460}
           onChange={({ min, max }) => {
-            setMin(min);
-            setMax(max);
             handlePriceChanges(min, max);
           }}
         />
       </div>
     </div>
   );
-  
-};
+}
 const MemoizedRangePrices = memo(RangePrices);
 
-export {MemoizedRangePrices};
+export { MemoizedRangePrices };

@@ -29,7 +29,7 @@ const initialState = {
   filters: {
     tipoAlojamiento: "Cualquier tipo",
     priceMin: 20,
-    priceMax: 416,
+    priceMax: 460,
     rooms: "Cualquiera",
     beds: "Cualquiera",
     baths: "Cualquiera",
@@ -121,6 +121,13 @@ export const getAccommodationType = (state) => {
   return state.airbnbs.filters.tipoAlojamiento;
 };
 
+export const getMinPrice = (state) => {
+  return state.airbnbs.filters.priceMin;
+};
+
+export const getMaxPrice = (state) => {
+  return state.airbnbs.filters.priceMax;
+};
 export const {
   changeTypeAccomodationFilter,
   changeBedsRoomsBathsAmountFilter,
