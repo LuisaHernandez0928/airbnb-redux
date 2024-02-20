@@ -4,6 +4,7 @@ function ModalSearchBar({
   modalContent,
   showParameterInfo,
   destinationSearch,
+  notifyClick,
 }) {
   const selectTypeModal = () => {
     if (Number(modalContent)) {
@@ -15,7 +16,7 @@ function ModalSearchBar({
     }
   };
   return (
-    <div onClick={(e) => e.stopPropagation()} className={selectTypeModal()}>
+    <div onClick={() => notifyClick()} className={selectTypeModal()}>
       {showParameterInfo(modalContent)}
     </div>
   );

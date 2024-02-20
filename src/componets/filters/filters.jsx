@@ -81,7 +81,7 @@ function Filters() {
   };
 
   const openFilters = () => {
-    setShowFilters(!showFilters);
+    setShowFilters(true);
   };
 
   const handleClickOutside = () => {
@@ -89,7 +89,7 @@ function Filters() {
   };
 
   const filters = (
-    <div className={styles.filterLayout}>
+    <div className={styles.filterLayout} onClick={(e) => e.stopPropagation()}>
       <div style={{ display: "contents" }}>
         <div className={styles.verticalEnds}>
           <Header />
@@ -141,14 +141,12 @@ function Filters() {
         <Title text={"Filtros"} />
       </button>
       {showFilters && (
-        <div
-          onClick={() => handleClickOutside()}
-          className={styles.aboveScreen}
-        >
+        <div className={styles.aboveScreen}>
           <ModalSearchBar
             modalContent={filters}
             showParameterInfo={showInfo}
             destinationSearch={"filter"}
+            notifyClick={() => handleClickOutside()}
           />
         </div>
       )}
