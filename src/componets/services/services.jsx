@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import { getSelectedServices } from "../../reducer/airbnbsSlice";
 import { getAllSections, subtitles, serviceOptions } from "./utils";
 import { TitleFilter } from "../titleFilter";
 import { Title } from "../title";
@@ -11,9 +9,6 @@ function Services({ handleServicesChanges, header }) {
   const [showMore, setShowMore] = useState(false);
   const amenities = getAllSections(serviceOptions);
 
-  const servicesFromStore = useSelector(getSelectedServices);
-
-  console.log(servicesFromStore);
   const notifyClick = (item) => {
     handleServicesChanges(item);
   };
