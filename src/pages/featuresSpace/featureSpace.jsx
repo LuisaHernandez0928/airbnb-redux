@@ -19,7 +19,7 @@ function Features() {
   const [photos, setPhotos] = useState("Hola");
   const [title, setTitle] = useState("Hola");
   const [locationDescription, setLocationDescription] = useState("Hola");
-  const [adults, setAdults] = useState("Hola");
+  const [adults, setAdults] = useState(0);
   const [beds, setBeds] = useState("Hola");
   const [baths, setBaths] = useState("Hola");
   const [rooms, setRooms] = useState("Hola");
@@ -68,7 +68,16 @@ function Features() {
     dispatch(addNewAirbnb(newAirbnb));
   };
 
-  console.log(useSelector(getUpdatedAirbnbJSON));
+  const notifyAdultsAmount = (value) => {
+    setAdults(value);
+  };
+
+  const notifyHomeChanges = (rooms, beds, baths) => {
+    setRooms(rooms);
+    setBeds(beds);
+    setBaths(baths);
+  };
+  //console.log(useSelector(getUpdatedAirbnbJSON));
 
   return (
     <div className={styles.featuresContainer}>
@@ -78,6 +87,7 @@ function Features() {
         <PeopleCounter
           peopleKind={"Adultos"}
           description={"Edad 13 anos o mas"}
+          notifyAdultsAmount={notifyAdultsAmount}
         />
         <PeopleCounter peopleKind={"Bebes"} description={"Menos de 2 anos"} />
         <PeopleCounter
@@ -95,6 +105,7 @@ function Features() {
       </div>
       <HabitacionesCamas
         header={"Cuantas habitaciones, banos, camas ofreces?"}
+        notifyHomeChanges={notifyHomeChanges}
       />
 
       <Services header={"Comodidades que ofreces"} />

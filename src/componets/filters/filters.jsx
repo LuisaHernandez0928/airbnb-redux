@@ -102,8 +102,8 @@ function Filters() {
             header={"Rango precios"}
           />
           <HabitacionesCamas
-            handleHomeChanges={handleHomeChanges}
             header={"Habitaciones y camas"}
+            handleHomeChanges={handleHomeChanges}
           />
           <Prizes
             handleFavoriteChanges={handleFavoriteChanges}

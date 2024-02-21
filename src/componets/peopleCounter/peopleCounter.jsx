@@ -3,16 +3,21 @@ import { Subtitle } from "../subtitle";
 import { Title } from "../title";
 import styles from "./index.module.css";
 
-function PeopleCounter({ peopleKind, description }) {
+function PeopleCounter({ peopleKind, description, notifyAdultsAmount }) {
   const [peopleAmount, setPeopleAmount] = useState(0);
-
   const decreaseAmount = () => {
     setPeopleAmount((prevAmount) => prevAmount - 1);
+    notifyAmount((prevAmount) => prevAmount - 1);
   };
 
+  const notifyAmount = (value) => {
+    if (peopleKind === "Adultos") notifyAdultsAmount(value);
+  };
   const increaseAmount = () => {
     setPeopleAmount((prevAmount) => prevAmount + 1);
+    notifyAmount((prevAmount) => prevAmount + 1);
   };
+
   return (
     <div className={styles.cardContainer}>
       <div className={styles.textContainer}>

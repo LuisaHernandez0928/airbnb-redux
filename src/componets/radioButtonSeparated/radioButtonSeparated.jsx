@@ -1,16 +1,11 @@
-import { useSelector } from "react-redux";
-import { notifyButtonSelected } from "../../reducer/airbnbsSlice";
 import { DescriptionFilter } from "../descriptionFilter";
 import styles from "./index.module.css";
 
-function RadioButtonSeparated({ subtitle, notifyRoomChanged }) {
-  const buttonSelected = useSelector((state) =>
-    notifyButtonSelected(state, subtitle)
-  );
-
+function RadioButtonSeparated({ subtitle, notifyRoomChanged, buttonSelected }) {
   const notifyButton = (e) => {
     notifyRoomChanged(subtitle, e.target.innerText);
   };
+
   return (
     <div className={styles.container}>
       <DescriptionFilter text={subtitle} />
