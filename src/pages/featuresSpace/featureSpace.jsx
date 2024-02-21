@@ -11,6 +11,9 @@ import { AddTitleDescription } from "../../componets/addTitleDescription";
 import { PriceAvailability } from "../../componets/priceAvailability/priceAvailability";
 
 function Features() {
+  const saveNewAirbnb = () => {
+    console.log("save");
+  };
   return (
     <div className={styles.featuresContainer}>
       <TitleFilter text={"Describe las caracteristicas de tu espacio"} />
@@ -45,6 +48,11 @@ function Features() {
       />
       <PriceAvailability header={"Add Price in available dates"} />
       <OpcionesReserva header={"Configura el tipo de reserva"} />
+      <div className={styles.saveContainer}>
+        <button className={styles.saveAirbnb} onClick={() => saveNewAirbnb()}>
+          Guadar Airbnb
+        </button>
+      </div>
     </div>
   );
 }
