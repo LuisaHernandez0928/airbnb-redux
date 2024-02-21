@@ -45,7 +45,6 @@ const initialState = {
   removedFilters: false,
 };
 
-console.log(arrayData);
 export const airbnbsSlice = createSlice({
   name: "airbnbs",
   initialState,
@@ -105,6 +104,8 @@ export const airbnbsSlice = createSlice({
       state.filters = initialState.filters;
     },
     addNewAirbnb: (state, action) => {
+      console.log("NewAirbnb Saved");
+      console.log(action.payload);
       state.airbnbs.push(action.payload);
     },
   },
