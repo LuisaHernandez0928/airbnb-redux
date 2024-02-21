@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addNewAirbnb, getUpdatedAirbnbJSON } from "../../reducer/airbnbsSlice";
 import { HabitacionesCamas } from "../../componets/habitacionesCamas";
@@ -11,34 +11,35 @@ import { CountrySelect } from "../../componets/countrySelect/countryComponent";
 import { GoogleMaps } from "../../componets/googleMaps/googleMap";
 import { AddTitleDescription } from "../../componets/addTitleDescription";
 import { PriceAvailability } from "../../componets/priceAvailability/priceAvailability";
+import styles from "./index.module.css";
 
 function Features() {
   const dispatch = useDispatch();
-  const photos = "Hola";
-  const title = "Hola";
-  const locationDescription = "Hola";
-  const adults = "Hola";
-  const score = "Hola";
-  const beds = "Hola";
-  const baths = "Hola";
-  const rooms = "Hola";
-  const bathKind = "Hola";
-  const tipoAlojamiento = "Hola";
-  const tipoPropiedad = "Hola";
-  const continent = "Hola";
-  const country = "Hola";
-  const city = "Hola";
-  const state = "Hola";
-  const neighborhood = "Hola";
-  const latitude = "Hola";
-  const longitude = "Hola";
-  const kindSpace = "Hola";
+
+  const [photos, setPhotos] = useState("Hola");
+  const [title, setTitle] = useState("Hola");
+  const [locationDescription, setLocationDescription] = useState("Hola");
+  const [adults, setAdults] = useState("Hola");
+  const [beds, setBeds] = useState("Hola");
+  const [baths, setBaths] = useState("Hola");
+  const [rooms, setRooms] = useState("Hola");
+  const [bathKind, setBathKind] = useState("Hola");
+  const [tipoAlojamiento, setTipoAlojamiento] = useState("Hola");
+  const [tipoPropiedad, setTipoPropiedad] = useState("Hola");
+  const [continent, setContinent] = useState("Hola");
+  const [country, setCountry] = useState("Hola");
+  const [city, setCity] = useState("Hola");
+  const [state, setState] = useState("Hola");
+  const [neighborhood, setNeighborhood] = useState("Hola");
+  const [latitude, setLatitude] = useState("Hola");
+  const [longitude, setLongitude] = useState("Hola");
+  const [kindSpace, setKindSpace] = useState("Hola");
 
   const newAirbnb = {
     pics: photos,
     description: title,
     guestsFavorite: false,
-    score: score,
+    score: 0,
     numReviews: 0,
     beds: beds,
     rooms: rooms,
