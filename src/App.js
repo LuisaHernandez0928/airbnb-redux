@@ -1,7 +1,10 @@
 import { useState } from "react";
-import "./App.css";
+import { useSelector } from "react-redux";
+import { getFilteredAirbnbs } from "./reducer/airbnbsSlice";
 import { HomeSearchBar } from "./layouts/homeSearchBar";
 import { FilterBar } from "./componets/filterBar";
+import { Card } from "./componets/card";
+import "./App.css";
 
 function App() {
   const [headerModalSholdBeClosed, setHeaderModalSholdBeClosed] =
@@ -13,6 +16,46 @@ function App() {
   const notifyModalStatus = () => {
     setHeaderModalSholdBeClosed(false);
   };
+
+  const filteredAirbnbs = useSelector(getFilteredAirbnbs);
+
+  const itemAirbnb = (
+    position,
+    images,
+    favoritoHuspedes,
+    description,
+    availability,
+    price
+  ) => {
+    return (
+      <div key={position}>
+        <Card
+          images={images}
+          favoritoHuspedes={favoritoHuspedes}
+          description={description}
+          availability={availability}
+          price={price}
+        />
+      </div>
+    );
+  };
+
+  const galleryAirbnb = () => {
+    const gallery = [];
+    for (let i = 1; i < filteredAirbnbs.length; i++) {
+      gallery.push(
+        itemAirbnb(
+          i,
+          filteredAirbnbs[i].pics,
+          filteredAirbnbs[i].guestsFavorite,
+          filteredAirbnbs[i].description,
+          filteredAirbnbs[i].availability[0].date,
+          filteredAirbnbs[i].availability[0].price
+        )
+      );
+    }
+    return gallery;
+  };
   return (
     <div className="App" onClick={() => closeModal()}>
       <HomeSearchBar
@@ -20,6 +63,7 @@ function App() {
         notifyModalOpened={notifyModalStatus}
       />
       <FilterBar />
+      <div className="galeryConrainer">{galleryAirbnb()}</div>
     </div>
   );
 }

@@ -33,8 +33,6 @@ function Filters() {
 
   const data = useSelector((state) => state.airbnbs.airbnbs);
 
-  const filteredAirbnbs = useSelector(getFilteredAirbnbs);
-
   const handleAlojamientoChanges = (value) => {
     dispatch(changeTypeAccomodationFilter(value));
   };
