@@ -1,0 +1,36 @@
+.featuresContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.peopleContainerOpts{
+    width: 100%;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid #DDD;
+    box-sizing: border-box;
+    padding: 32px 24px;
+    margin-bottom: 8px;
+  }
+
+  .countryContainerOpts{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid #DDD;
+    box-sizing: border-box;
+    padding: 32px 24px;
+    margin-bottom: 8px;
+    gap: 16px;
+    flex-shrink: 0;
+  }
