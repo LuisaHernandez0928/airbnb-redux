@@ -1,4 +1,6 @@
 import styles from "./index.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { addNewAirbnb, getUpdatedAirbnbJSON } from "../../reducer/airbnbsSlice";
 import { HabitacionesCamas } from "../../componets/habitacionesCamas";
 import { Services } from "../../componets/services/services";
 import { OpcionesReserva } from "../../componets/opcionesReserva/opcionesReserva";
@@ -11,9 +13,62 @@ import { AddTitleDescription } from "../../componets/addTitleDescription";
 import { PriceAvailability } from "../../componets/priceAvailability/priceAvailability";
 
 function Features() {
-  const saveNewAirbnb = () => {
-    console.log("save");
+  const dispatch = useDispatch();
+  const photos = "Hola";
+  const title = "Hola";
+  const locationDescription = "Hola";
+  const adults = "Hola";
+  const score = "Hola";
+  const beds = "Hola";
+  const baths = "Hola";
+  const rooms = "Hola";
+  const bathKind = "Hola";
+  const tipoAlojamiento = "Hola";
+  const tipoPropiedad = "Hola";
+  const continent = "Hola";
+  const country = "Hola";
+  const city = "Hola";
+  const state = "Hola";
+  const neighborhood = "Hola";
+  const latitude = "Hola";
+  const longitude = "Hola";
+  const kindSpace = "Hola";
+
+  const newAirbnb = {
+    pics: photos,
+    description: title,
+    guestsFavorite: false,
+    score: score,
+    numReviews: 0,
+    beds: beds,
+    rooms: rooms,
+    peopleCapacity: adults,
+    baths: baths,
+    bathKind: bathKind,
+    tipoAlojamiento: tipoAlojamiento,
+    tipoPropiedad: tipoPropiedad,
+    services: [],
+    bookingOptions: [],
+    location: {
+      continent: continent,
+      country: country,
+      city: city,
+      state: state,
+      neighborhood: neighborhood,
+      lat: latitude,
+      long: longitude,
+      description: locationDescription,
+    },
+    availability: [],
+    kind: kindSpace,
   };
+
+  const saveNewAirbnb = (newAirbnb) => {
+    dispatch(addNewAirbnb(newAirbnb));
+  };
+
+  console.log(useSelector(getUpdatedAirbnbJSON));
+
   return (
     <div className={styles.featuresContainer}>
       <TitleFilter text={"Describe las caracteristicas de tu espacio"} />
@@ -49,8 +104,11 @@ function Features() {
       <PriceAvailability header={"Add Price in available dates"} />
       <OpcionesReserva header={"Configura el tipo de reserva"} />
       <div className={styles.saveContainer}>
-        <button className={styles.saveAirbnb} onClick={() => saveNewAirbnb()}>
-          Guadar Airbnb
+        <button
+          className={styles.saveAirbnb}
+          onClick={() => saveNewAirbnb(newAirbnb)}
+        >
+          Save Airbnb
         </button>
       </div>
     </div>

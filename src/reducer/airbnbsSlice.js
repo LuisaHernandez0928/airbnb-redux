@@ -104,6 +104,9 @@ export const airbnbsSlice = createSlice({
       state.removedFilters = true;
       state.filters = initialState.filters;
     },
+    addNewAirbnb: (state, action) => {
+      state.airbnbs.push(action.payload);
+    },
   },
 });
 
@@ -175,6 +178,10 @@ export const getSelectedBookingOptions = (state) => {
   return state.airbnbs.filters.bookingOptions;
 };
 
+export const getUpdatedAirbnbJSON = (state) => {
+  return state.airbnbs.airbnbs;
+};
+
 export const {
   changeTypeAccomodationFilter,
   changeBedsRoomsBathsAmountFilter,
@@ -184,6 +191,7 @@ export const {
   changePropertyFilter,
   toggleBookingOptsFilter,
   removeAllFilters,
+  addNewAirbnb,
 } = airbnbsSlice.actions;
 
 export default airbnbsSlice.reducer;
