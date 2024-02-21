@@ -3,6 +3,7 @@ import { HabitacionesCamas } from "../../componets/habitacionesCamas";
 import { Services } from "../../componets/services/services";
 import { OpcionesReserva } from "../../componets/opcionesReserva/opcionesReserva";
 import { PeopleCounter } from "../../componets/peopleCounter/peopleCounter";
+import { AddPhotos } from "../../componets/addPhotos/addPhotos";
 import { TitleFilter } from "../../componets/titleFilter";
 import { CountrySelect } from "../../componets/countrySelect/countryComponent";
 import { GoogleMaps } from "../../componets/googleMaps/googleMap";
@@ -36,7 +37,7 @@ function Features() {
       />
 
       <Services header={"Comodidades que ofreces"} />
-      <div>agrega fotos</div>
+      <AddPhotos />
       <div>ponle un titulo a tu espacio y escribe tu descripcion</div>
       <OpcionesReserva header={"Configura el tipo de reserva"} />
       <div>Precio y disponibilidad</div>

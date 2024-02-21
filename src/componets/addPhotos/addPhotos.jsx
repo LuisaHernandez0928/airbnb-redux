@@ -1,23 +1,35 @@
+import { useState } from "react";
 import styles from "./index.module.css";
 
 function AddPhotos() {
-  const saveImages = [];
+  const [saveImages, setSaveImage] = useState([]);
+  let temporaryImages = "";
 
   const uploadImages = (e) => {
-    saveImages.push(e.target.value);
+    console.log(e.target.value);
+    temporaryImages = e.target.value;
+  };
+
+  const saveUploadedImages = () => {
+    setSaveImage([...saveImages, temporaryImages]);
+    console.log(saveImages);
   };
 
   const showUploadedImages = () => {
-    saveImages.map((image) => (
+    return saveImages.map((image) => (
       <img src={image} alt="Upload photos" className={styles.uploadImages} />
     ));
   };
 
   return (
     <div className={styles.uploadContainer}>
-      <input type="text" placeholder="Upload photos" />
-      <button onClick={(e) => uploadImages(e)}>Submit</button>
-      <div className={styles.imagesContainer}>{showUploadedImages}</div>
+      <input
+        type="text"
+        placeholder="Upload photos"
+        onChange={(e) => uploadImages(e)}
+      />
+      <button onClick={() => saveUploadedImages()}>Submit</button>
+      <div>{showUploadedImages()}</div>
     </div>
   );
 }
