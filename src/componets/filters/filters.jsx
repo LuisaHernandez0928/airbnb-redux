@@ -125,7 +125,7 @@ function Filters() {
           <Languages header={"Idioma del anfitrion"} />
         </div>
         <div className={styles.verticalEnds}>
-          <Footer />
+          <Footer notifyClick={handleClickOutside} />
         </div>
       </div>
     </div>
@@ -143,7 +143,7 @@ function Filters() {
             modalContent={filters}
             showParameterInfo={showInfo}
             destinationSearch={"filter"}
-            notifyClick={() => handleClickOutside()}
+            notifyClick={handleClickOutside}
           />
         </div>
       )}

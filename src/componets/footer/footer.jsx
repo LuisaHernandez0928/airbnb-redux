@@ -6,7 +6,7 @@ import {
 import { Title } from "../title";
 import styles from "./index.module.css";
 
-function Footer() {
+function Footer({ notifyClick }) {
   const dispatch = useDispatch();
   const updatedNumberOfAirbnbs = useSelector(getAirbnbNumberUpdated);
 
@@ -16,7 +16,9 @@ function Footer() {
 
   const buttonFilter = (airbnbs) => {
     return (
-      <button className={styles.showAirbnb}>Mostrar {airbnbs} lugares</button>
+      <button className={styles.showAirbnb} onClick={() => notifyClick()}>
+        Mostrar {airbnbs} lugares
+      </button>
     );
   };
 

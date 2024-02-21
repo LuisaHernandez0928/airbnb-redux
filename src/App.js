@@ -42,7 +42,7 @@ function App() {
 
   const galleryAirbnb = () => {
     const gallery = [];
-    for (let i = 1; i < filteredAirbnbs.length; i++) {
+    for (let i = 0; i < filteredAirbnbs.length; i++) {
       gallery.push(
         itemAirbnb(
           i,
