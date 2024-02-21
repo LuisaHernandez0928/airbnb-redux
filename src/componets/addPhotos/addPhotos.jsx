@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { TitleFilter } from "../titleFilter";
 import styles from "./index.module.css";
 
-function AddPhotos() {
+function AddPhotos({ header }) {
   const [saveImages, setSaveImage] = useState([]);
   const [temporaryImages, setTemporaryImages] = useState("");
 
@@ -26,6 +27,7 @@ function AddPhotos() {
 
   return (
     <div className={styles.uploadContainer}>
+      <TitleFilter text={header} />
       <div className={styles.inputContainer}>
         <input
           type="text"

@@ -7,6 +7,7 @@ import { AddPhotos } from "../../componets/addPhotos/addPhotos";
 import { TitleFilter } from "../../componets/titleFilter";
 import { CountrySelect } from "../../componets/countrySelect/countryComponent";
 import { GoogleMaps } from "../../componets/googleMaps/googleMap";
+import { AddTitleDescription } from "../../componets/addTitleDescription";
 
 function Features() {
   return (
@@ -37,8 +38,10 @@ function Features() {
       />
 
       <Services header={"Comodidades que ofreces"} />
-      <AddPhotos />
-      <div>ponle un titulo a tu espacio y escribe tu descripcion</div>
+      <AddPhotos header={"Add photos to know your space"} />
+      <AddTitleDescription
+        header={"Add the title and description of your airbnb"}
+      />
       <OpcionesReserva header={"Configura el tipo de reserva"} />
       <div>Precio y disponibilidad</div>
     </div>
