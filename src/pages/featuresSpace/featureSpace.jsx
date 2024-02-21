@@ -8,6 +8,7 @@ import { TitleFilter } from "../../componets/titleFilter";
 import { CountrySelect } from "../../componets/countrySelect/countryComponent";
 import { GoogleMaps } from "../../componets/googleMaps/googleMap";
 import { AddTitleDescription } from "../../componets/addTitleDescription";
+import { PriceAvailability } from "../../componets/priceAvailability/priceAvailability";
 
 function Features() {
   return (
@@ -42,8 +43,8 @@ function Features() {
       <AddTitleDescription
         header={"Add the title and description of your airbnb"}
       />
+      <PriceAvailability header={"Add Price in available dates"} />
       <OpcionesReserva header={"Configura el tipo de reserva"} />
-      <div>Precio y disponibilidad</div>
     </div>
   );
 }
