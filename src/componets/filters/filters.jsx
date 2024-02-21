@@ -17,7 +17,6 @@ import {
   changeTypeAccomodationFilter,
   changeBedsRoomsBathsAmountFilter,
   toggleSelectedServiceFilter,
-  getFilteredAirbnbs,
   changePriceFilter,
   changeFavoriteGuestTag,
   changePropertyFilter,

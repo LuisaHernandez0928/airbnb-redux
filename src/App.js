@@ -18,7 +18,7 @@ function App() {
   };
 
   const filteredAirbnbs = useSelector(getFilteredAirbnbs);
-
+  console.log(filteredAirbnbs);
   const itemAirbnb = (
     position,
     images,
