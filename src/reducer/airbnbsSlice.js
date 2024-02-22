@@ -45,6 +45,7 @@ const initialState = {
   removedFilters: false,
 };
 
+console.log(arrayData);
 export const airbnbsSlice = createSlice({
   name: "airbnbs",
   initialState,
